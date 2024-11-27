@@ -1,0 +1,36 @@
+-plugin.junit5: \
+	aQute.bnd.repository.maven.provider.MavenBndRepository;\
+		releaseUrl			= "https://repo.maven.apache.org/maven2/"; \
+		snapshotUrl			= "https://oss.sonatype.org/content/repositories/snapshots/,https://devel.data-in-motion.biz/nexus/repository/dim-snapshot/";\
+		index            	= "${.}/osgi-test.maven" ;\
+		poll.time           = -1;\
+		readOnly            = true;\
+		name="OSGi-Test Dependencies"
+
+-require-bnd: "(version>=7.0.0)"
+
+-testpath.junit: \
+	${junit},\
+	${mockito}	
+
+-runsystempackages.objenesis: sun.misc,sun.reflect
+
+junit: \
+	junit-platform-commons;version=latest,\
+	junit-platform-engine;version=latest,\
+	assertj-core;version=latest,\
+	org.opentest4j;version=latest,\
+	org.apiguardian:apiguardian-api;version=latest,\
+	junit-jupiter-api;version=latest,\
+	junit-jupiter-engine;version=latest,\
+	junit-jupiter-params;version=latest
+
+mockito: org.mockito.mockito-core;version=latest,\
+	org.mockito.junit-jupiter;version=latest,\
+	net.bytebuddy.byte-buddy;version=latest,\
+	org.objenesis;version=latest
+	
+osgitest: \
+	org.osgi.test.common;version=latest,\
+	org.osgi.test.junit5;version=latest,\
+	org.osgi.test.assertj.framework;version=latest
