@@ -1,0 +1,4 @@
+# Deps for fake PII generator
+net.datafaker:datafaker:2.4.2
+net.datafaker:datafaker:jar:sources:2.4.2
+com.googlecode.libphonenumber:libphonenumber:8.13.50

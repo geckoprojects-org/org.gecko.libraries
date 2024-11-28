@@ -1,0 +1,17 @@
+lib.version: 2.4.2
+
+-buildpath:  \
+	net.datafaker:datafaker;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;net.datafaker:datafaker:jar:sources;${lib.version};EXACT},\
+	=@${repo;net.datafaker:datafaker:jar:sources;${lib.version};EXACT},\
+	@${repo;net.datafaker:datafaker:jar;${lib.version};EXACT}!/META-INF/services/*
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: Re-packaged of net.datafaker JAR
+Bundle-Vendor: Datafaker-Net
+Bundle-SymbolicName: net.datafaker
+
+Export-Package: net.*
