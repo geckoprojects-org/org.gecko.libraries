@@ -5,8 +5,10 @@ lib.version: 2.4.2
 	
 -includeresource: \
 	OSGI-OPT/src=@${repo;net.datafaker:datafaker:jar:sources;${lib.version};EXACT},\
-	=@${repo;net.datafaker:datafaker:jar:sources;${lib.version};EXACT},\
-	@${repo;net.datafaker:datafaker:jar;${lib.version};EXACT}!/META-INF/services/*
+	@${repo;net.datafaker:datafaker:jar;${lib.version};EXACT}!/META-INF/services/*,\
+	@${repo;net.datafaker:datafaker:jar;${lib.version};EXACT}!/META-INF/native-image/*,\
+	@${repo;net.datafaker:datafaker:jar;${lib.version};EXACT}!/en/*,\
+	@${repo;net.datafaker:datafaker:jar;${lib.version};EXACT}!/*.yml
 
 Bundle-Version: ${lib.version}
 Bundle-Localization: bundle
