@@ -10,7 +10,7 @@ lib.version: 2.4.2
 	@${repo;net.datafaker:datafaker:jar;${lib.version};EXACT}!/en/*,\
 	@${repo;net.datafaker:datafaker:jar;${lib.version};EXACT}!/*.yml
 
-Bundle-Version: ${lib.version}
+Bundle-Version: ${lib.version}.SNAPSHOT
 Bundle-Localization: bundle
 Bundle-Name: Re-packaged of net.datafaker JAR
 Bundle-Vendor: Datafaker-Net
