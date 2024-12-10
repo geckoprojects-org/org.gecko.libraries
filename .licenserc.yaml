@@ -18,6 +18,7 @@ header:
   paths-ignore:
     - 'dist'
     - 'licenses'
+    - 'org.eclipse.paho.mqttv5.client'
     - '**/package-info.java'
     - '**/packageinfo'
     - '**/module-info.java'
