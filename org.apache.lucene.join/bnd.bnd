@@ -1,0 +1,10 @@
+-buildpath: org.apache.lucene:lucene-join;version=${lucene-version}
+
+Bundle-Version: ${lucene-version}.SNAPSHOT
+
+Export-Package:\
+	org.apache.lucene.*
+	
+-includeresource: \
+	@${repo;org.apache.lucene:lucene-join;${lucene-version}}!/META-INF/*.txt,\
+	OSGI-OPT/src=@${repo;org.apache.lucene:lucene-join:jar:sources;${lucene-version};EXACT}

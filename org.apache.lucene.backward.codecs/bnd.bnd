@@ -1,0 +1,13 @@
+-buildpath: org.apache.lucene:lucene-codecs;version=${lucene-version}
+
+-resourceonly: true
+
+Bundle-Version: ${lucene-version}.SNAPSHOT
+
+Export-Package:\
+	org.apache.lucene.*
+	
+-includeresource: \
+	@${repo;org.apache.lucene:lucene-backward-codecs;${lucene-version}}!/META-INF/services/*,\
+	@${repo;org.apache.lucene:lucene-backward-codecs;${lucene-version}}!/META-INF/*.txt,\
+	OSGI-OPT/src=@${repo;org.apache.lucene:lucene-backward-codecs:jar:sources;${lucene-version};EXACT}

@@ -1,0 +1,11 @@
+-buildpath: org.apache.lucene:lucene-suggest;version=${lucene-version}
+
+Bundle-Version: ${lucene-version}.SNAPSHOT
+
+Export-Package:\
+	org.apache.lucene.*
+	
+-includeresource: \
+	@${repo;org.apache.lucene:lucene-suggest;${lucene-version}}!/META-INF/*.txt,\
+	@${repo;org.apache.lucene:lucene-suggest;${lucene-version}}!/META-INF/services/*,\
+	OSGI-OPT/src=@${repo;org.apache.lucene:lucene-suggest:jar:sources;${lucene-version};EXACT}

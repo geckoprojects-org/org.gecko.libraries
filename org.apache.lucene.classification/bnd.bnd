@@ -1,0 +1,10 @@
+-buildpath: org.apache.lucene:lucene-classification;version=${lucene-version}
+
+Bundle-Version: ${lucene-version}.SNAPSHOT
+
+Export-Package:\
+	org.apache.lucene.*
+	
+-includeresource: \
+	@${repo;org.apache.lucene:lucene-classification;${lucene-version}}!/META-INF/*.txt,\
+	OSGI-OPT/src=@${repo;org.apache.lucene:lucene-classification:jar:sources;${lucene-version};EXACT}

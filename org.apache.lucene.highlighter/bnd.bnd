@@ -1,0 +1,10 @@
+-buildpath: org.apache.lucene:lucene-highlighter;version=${lucene-version}
+
+Bundle-Version: ${lucene-version}.SNAPSHOT
+
+Export-Package:\
+	org.apache.lucene.*
+	
+-includeresource: \
+	@${repo;org.apache.lucene:lucene-highlighter;${lucene-version}}!/META-INF/*.txt,\
+	OSGI-OPT/src=@${repo;org.apache.lucene:lucene-highlighter:jar:sources;${lucene-version};EXACT}

@@ -13,6 +13,9 @@ dimcBaselining: true
 github-project: org.gecko.libraries
 base-version: 1.0.0
 
+lucene-version: 9.12.0
+opennlp-version: 2.3.3
+
 # Maven Central Group-Id
 # For Geckoprojects the groupid must start with org.geckoprojects
 -groupid: org.geckoprojects.libraries
@@ -24,6 +27,15 @@ javac.target: 11
 
 -jpms-module-info:
 
+-plugin.5.Lucene: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/lucene.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="Lucene"
+        
 -plugin.4.Unidata: \
     aQute.bnd.repository.maven.provider.MavenBndRepository; \
         releaseUrl="https://artifacts.unidata.ucar.edu/repository/unidata-all/"; \

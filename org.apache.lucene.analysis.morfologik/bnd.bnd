@@ -1,0 +1,35 @@
+-buildpath: \
+	org.apache.lucene:lucene-analysis-morfologik;version=${lucene-version}
+	
+-resourceonly: true
+
+Bundle-Version: ${lucene-version}.SNAPSHOT
+
+Export-Package: org.apache.lucene.*
+
+-maven-dependencies: \
+	org.carrot2.morfologik-stemming;\
+	  groupId=org.carrot2;\
+      artifactId=morfologik-stemming;\
+      version=2.1.9;\
+      scope=compile,\
+	org.carrot2.morfologik-fsa;\
+	  groupId=org.carrot2;\
+      artifactId=morfologik-fsa;\
+      version=2.1.9;\
+      scope=compile,\
+	org.carrot2.morfologik-polish;\
+	  groupId=org.carrot2;\
+      artifactId=morfologik-polish;\
+      version=2.1.9;\
+      scope=compile,\
+    org.apache.commons.commons-codec;\
+      groupId=commons-codec;\
+      artifactId=commons-codec;\
+      version=1.15;\
+      scope=compile
+
+-includeresource: \
+	@${repo;org.apache.lucene:lucene-analysis-morfologik;${lucene-version}}!/META-INF/*.txt,\
+	@${repo;org.apache.lucene:lucene-analysis-morfologik;${lucene-version}}!/META-INF/services/*,\
+	OSGI-OPT/src=@${repo;org.apache.lucene:lucene-analysis-morfologik:jar:sources;${lucene-version};EXACT}
