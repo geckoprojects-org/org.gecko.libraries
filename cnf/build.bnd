@@ -26,8 +26,7 @@ javac.target: 11
 
 -plugin.4.Unidata: \
     aQute.bnd.repository.maven.provider.MavenBndRepository; \
-        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
-        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        releaseUrl="https://artifacts.unidata.ucar.edu/repository/unidata-all/"; \
         index=${.}/library_specific/unidata.mvn; \
         readOnly=true; \
         poll.time=-1; \
