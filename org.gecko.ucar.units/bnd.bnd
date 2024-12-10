@@ -7,7 +7,7 @@ lib.version: 5.6.0
 	@${repo;edu.ucar:udunits:jar;${lib.version};EXACT}!/META-INF/third-party-licenses/*,\
 	OSGI-OPT/src=@${repo;edu.ucar:udunits:jar:sources;${lib.version};EXACT}
 
-Bundle-Version: ${lib.version}
+Bundle-Version: ${lib.version}.SNAPSHOT
 Bundle-Name: Re-packaged Unidata udUnits
 Bundle-Vendor: Unidata University Corporation for Atmospheric Research
 

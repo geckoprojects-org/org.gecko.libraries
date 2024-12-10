@@ -1,6 +1,6 @@
 lib.version: 5.6.0
 google.re2j.version: 1.7.0
-Bundle-Version: ${lib.version}
+Bundle-Version: ${lib.version}.SNAPSHOT
 Bundle-Name: Re-packaged Unidata netCDF
 Bundle-Vendor: Unidata University Corporation for Atmospheric Research
 
