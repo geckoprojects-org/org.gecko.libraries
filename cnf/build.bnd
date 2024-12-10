@@ -24,6 +24,15 @@ javac.target: 11
 
 -jpms-module-info:
 
+-plugin.4.Unidata: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/unidata.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="Unidata"
+
 -plugin.3.Datafaker: \
     aQute.bnd.repository.maven.provider.MavenBndRepository; \
         snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \

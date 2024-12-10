@@ -1,0 +1,32 @@
+lib.version: 5.6.0
+google.re2j.version: 1.7.0
+Bundle-Version: ${lib.version}
+Bundle-Name: Re-packaged Unidata netCDF
+Bundle-Vendor: Unidata University Corporation for Atmospheric Research
+
+-buildpath:  \
+	edu.ucar:cdm-core;version=${lib.version},\
+	com.google.re2j:re2j;version=${google.re2j.version}
+	
+-includeresource: \
+	@${repo;edu.ucar:cdm-core:jar;${lib.version};EXACT}!/*.proto,\
+	@${repo;edu.ucar:cdm-core:jar;${lib.version};EXACT}!/resources/*,\
+	@${repo;edu.ucar:cdm-core:jar;${lib.version};EXACT}!/META-INF/services/*,\
+	@${repo;edu.ucar:cdm-core:jar;${lib.version};EXACT}!/META-INF/third-party-licenses/*,\
+	OSGI-OPT/src=@${repo;edu.ucar:cdm-core:jar:sources;${lib.version};EXACT},\
+	OSGI-OPT/src=@${repo;com.google.re2j:re2j:jar:sources;${google.re2j.version};EXACT}
+
+
+Export-Package: \
+	com.google.re2j.*,\
+	thredds.*,\
+	ucar.*,\
+	uk.*
+Import-Package: \
+	ucar.httpservices.*;'resolution:'=optional,\
+	org.jdom2.*;'resolution:'=optional,\
+	org.joda.*;'resolution:'=optional,\
+	org.apache.*;'resolution:'=optional,\
+	com.google.protobuf.*;'resolution:'=optional,\
+	com.beust.*;'resolution:'=optional,\
+	*
