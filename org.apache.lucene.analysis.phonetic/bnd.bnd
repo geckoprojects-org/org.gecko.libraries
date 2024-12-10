@@ -1,0 +1,13 @@
+-buildpath: \
+	org.apache.lucene:lucene-analysis-phonetic;version=${lucene-version}
+	
+-resourceonly: true
+
+Bundle-Version: ${lucene-version}.SNAPSHOT
+
+Export-Package: org.apache.lucene.*
+
+-includeresource: \
+	@${repo;org.apache.lucene:lucene-analysis-phonetic;${lucene-version}}!/META-INF/*.txt,\
+	@${repo;org.apache.lucene:lucene-analysis-phonetic;${lucene-version}}!/META-INF/services/*,\
+	OSGI-OPT/src=@${repo;org.apache.lucene:lucene-analysis-phonetic:jar:sources;${lucene-version};EXACT}

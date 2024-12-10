@@ -1,0 +1,22 @@
+-buildpath: \
+	org.apache.lucene:lucene-facet;version=${lucene-version},\
+	com.carrotsearch:hppc;version=0.9.1
+	
+-maven-dependencies: \
+	com.carrotsearch.hppc;\
+	  groupId=com.carrotsearch;\
+      artifactId=hppc;\
+      version=0.9.1;\
+      scope=compile
+
+-resourceonly: true
+
+Bundle-Version: ${lucene-version}.SNAPSHOT
+
+Export-Package: \
+	org.apache.lucene.*,\
+	com.carrotsearch.*
+
+-includeresource: \
+	@${repo;org.apache.lucene:lucene-facet;${lucene-version}}!/META-INF/*.txt,\
+	OSGI-OPT/src=@${repo;org.apache.lucene:lucene-facet:jar:sources;${lucene-version};EXACT}
