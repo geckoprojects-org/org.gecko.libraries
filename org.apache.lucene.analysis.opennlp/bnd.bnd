@@ -1,0 +1,17 @@
+-buildpath: \
+	org.apache.lucene:lucene-analysis-opennlp;version=${lucene-version},\
+	org.apache.opennlp:opennlp-tools;version=${opennlp-version}
+	
+-resourceonly: true
+
+Bundle-Version: ${lucene-version}.SNAPSHOT
+
+Export-Package: \
+	org.apache.*,\
+	opennlp.*
+
+-includeresource: \
+	@${repo;org.apache.lucene:lucene-analysis-opennlp;${lucene-version}}!/META-INF/*.txt,\
+	@${repo;org.apache.lucene:lucene-analysis-opennlp;${lucene-version}}!/META-INF/services/*,\
+	OSGI-OPT/src=@${repo;org.apache.lucene:lucene-analysis-opennlp:jar:sources;${lucene-version};EXACT},\
+	OSGI-OPT/src=@${repo;org.apache.opennlp:opennlp-tools:jar:sources;${opennlp-version};EXACT}

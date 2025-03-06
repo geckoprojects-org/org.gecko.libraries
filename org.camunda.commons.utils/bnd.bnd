@@ -1,0 +1,21 @@
+lib.version: 7.22.0
+
+-buildpath:  \
+	org.camunda.commons:camunda-commons-utils;version=${lib.version}
+	
+-maven-dependencies: \
+	org.camunda.commons;\
+	  groupId=org.camunda.commons;\
+      artifactId=camunda-commons-logging;\
+      version=${lib.version};\
+      scope=compile
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;org.camunda.commons:camunda-commons-utils:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: org.camunda.commons.utils
+Bundle-Vendor: Camunda services GmbH
+
+Export-Package: org.camunda.commons.utils.*

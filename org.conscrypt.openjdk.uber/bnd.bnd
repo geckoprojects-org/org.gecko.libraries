@@ -1,0 +1,25 @@
+lib.version: 2.5.2
+
+-buildpath:  \
+	org.conscrypt:conscrypt-openjdk-uber;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;org.conscrypt:conscrypt-openjdk-uber:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: org.conscrypt.openjdk.uber
+Bundle-Vendor: 
+
+Import-Package: \
+	javax.crypto,\
+	javax.crypto.spec,\
+	javax.net,javax.net.ssl,\
+	javax.security.auth.x500,\
+	javax.security.cert,\
+	org.conscrypt,\
+	org.conscrypt.ct,\
+	org.conscrypt.io,\
+	sun.security.x509;resolution:=optional
+	
+Export-Package: *

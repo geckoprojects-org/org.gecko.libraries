@@ -1,0 +1,27 @@
+-buildpath: \
+	org.apache.lucene:lucene-benchmark;version=${lucene-version}
+-resourceonly: true
+
+Bundle-Version: ${lucene-version}.SNAPSHOT
+
+Export-Package: org.apache.lucene.*
+
+-maven-dependencies: \
+	org.locationtech.spatial4j;\
+	  groupId=org.locationtech.spatial4j;\
+      artifactId=spatial4j;\
+      version=0.8;\
+      scope=compile,\
+    org.apache.commons.commons-compress;\
+	  groupId=org.apache.commons;\
+      artifactId=commons-compress;\
+      version=1.22;\
+      scope=compile
+      
+
+-includeresource: \
+	@${repo;org.apache.lucene:lucene-benchmark;${lucene-version}}!/META-INF/*.txt,\
+	OSGI-OPT/src=@${repo;org.apache.lucene:lucene-benchmark:jar:sources;${lucene-version};EXACT}
+Import-Package: \
+	org.cyberneko.*;'resolution:'=optional,\
+	*

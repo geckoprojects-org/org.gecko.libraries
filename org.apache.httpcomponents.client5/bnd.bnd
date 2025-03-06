@@ -1,0 +1,43 @@
+lib.version: 5.4.2
+
+-buildpath:  \
+	org.apache.httpcomponents.client5:httpclient5;version=${lib.version}
+
+-maven-dependencies: \
+	org.slf4j;\
+	  groupId=org.slf4j;\
+      artifactId=slf4j-api;\
+      scope=compile,\
+    org.apache.hc.core5;\
+      groupId=org.apache.httpcomponents.core5;\
+      artifactId=httpcore5;\
+      version=5.3.3;\
+      scope=compile,\
+    org.apache.hc.core5-h2;\
+      groupId=org.apache.httpcomponents.core5;\
+      artifactId=httpcore5-h2;\
+      version=5.3.3;\
+      scope=compile,\
+    org.brotli;\
+      groupId=org.brotli;\
+      artifactId=dec;\
+      version=0.1.2;\
+      optional=true;\
+      scope=compile,\
+    org.conscrypt;\
+      groupId=org.conscrypt;\
+      artifactId=conscrypt-openjdk-uber;\
+      version=2.5.2;\
+      optional=true;\
+      scope=compile,\
+
+
+-includeresource: \
+	OSGI-OPT/src=@${repo;org.apache.httpcomponents.client5:httpclient5:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: org.apache.httpcomponents.client5
+Bundle-Vendor: Apache
+
+Export-Package: org.apache.hc.client5.http.*

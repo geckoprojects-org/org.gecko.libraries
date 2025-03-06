@@ -1,0 +1,25 @@
+-buildpath: \
+	org.apache.lucene:lucene-spatial3d;version=${lucene-version},\
+	org.apache.lucene:lucene-spatial-extras;version=${lucene-version},\
+	com.google.geometry:s2-geometry;version=2.0.0
+
+Bundle-Version: ${lucene-version}.SNAPSHOT
+
+-maven-dependencies: \
+	org.locationtech.spatial4j;\
+	  groupId=org.locationtech.spatial4j;\
+      artifactId=spatial4j;\
+      version=0.8;\
+      scope=compile,\
+
+Export-Package:\
+	org.apache.lucene.*,\
+	com.google.*
+	
+-includeresource: \
+	@${repo;org.apache.lucene:lucene-spatial3d;${lucene-version}}!/META-INF/*.txt,\
+	OSGI-OPT/src=@${repo;org.apache.lucene:lucene-spatial3d:jar:sources;${lucene-version};EXACT},\
+	OSGI-OPT/src=@${repo;org.apache.lucene:lucene-spatial-extras:jar:sources;${lucene-version};EXACT}
+Import-Package: \
+	com.google.*;'resolution:'=optional,\
+	*

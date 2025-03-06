@@ -13,6 +13,9 @@ dimcBaselining: true
 github-project: org.gecko.libraries
 base-version: 1.0.0
 
+lucene-version: 9.12.0
+opennlp-version: 2.3.3
+
 # Maven Central Group-Id
 # For Geckoprojects the groupid must start with org.geckoprojects
 -groupid: org.geckoprojects.libraries
@@ -23,6 +26,50 @@ javac.target: 11
 -require-bnd "(version>=6.3.1)"
 
 -jpms-module-info:
+
+-plugin.7.Http5: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/http5.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="Http5"
+
+-plugin.6.Conscrypt: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/conscrypt.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="Conscrypt"
+
+-plugin.6.Camunda: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/camunda.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="Camunda"
+
+-plugin.5.Lucene: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/lucene.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="Lucene"
+        
+-plugin.4.Unidata: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        releaseUrl="https://artifacts.unidata.ucar.edu/repository/unidata-all/"; \
+        index=${.}/library_specific/unidata.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="Unidata"
 
 -plugin.3.Datafaker: \
     aQute.bnd.repository.maven.provider.MavenBndRepository; \

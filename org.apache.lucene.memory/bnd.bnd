@@ -1,0 +1,11 @@
+-buildpath: org.apache.lucene:lucene-memory;version=${lucene-version}
+
+-resourceonly: true
+
+Bundle-Version: ${lucene-version}.SNAPSHOT
+
+Export-Package: org.apache.lucene.*
+
+-includeresource: ,\
+	@${repo;org.apache.lucene:lucene-memory;${lucene-version}}!/META-INF/*.txt,\
+	OSGI-OPT/src=@${repo;org.apache.lucene:lucene-memory:jar:sources;${lucene-version};EXACT}

@@ -1,0 +1,20 @@
+-buildpath: \
+	org.apache.lucene:lucene-analysis-icu;version=${lucene-version}
+	
+-resourceonly: true
+
+-maven-dependencies: \
+	com.ibm.icu;\
+	  groupId=com.ibm.icu;\
+      artifactId=icu4j;\
+      version=70.1;\
+      scope=compile
+
+Bundle-Version: ${lucene-version}.SNAPSHOT
+
+Export-Package: org.apache.lucene.*
+
+-includeresource: \
+	@${repo;org.apache.lucene:lucene-analysis-icu;${lucene-version}}!/META-INF/*.txt,\
+	@${repo;org.apache.lucene:lucene-analysis-icu;${lucene-version}}!/META-INF/services/*,\
+	OSGI-OPT/src=@${repo;org.apache.lucene:lucene-analysis-icu:jar:sources;${lucene-version};EXACT}

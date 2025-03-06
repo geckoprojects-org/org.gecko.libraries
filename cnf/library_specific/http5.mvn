@@ -1,0 +1,8 @@
+org.apache.httpcomponents.client5:httpclient5:5.4.2
+org.apache.httpcomponents.client5:httpclient5:jar:sources:5.4.2
+
+org.apache.httpcomponents.core5:httpcore5:5.3.3
+org.apache.httpcomponents.core5:httpcore5:jar:sources:5.3.3
+
+org.apache.httpcomponents.core5:httpcore5-h2:5.3.3
+org.apache.httpcomponents.core5:httpcore5-h2:jar:sources:5.3.3

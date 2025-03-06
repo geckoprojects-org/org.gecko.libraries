@@ -1,0 +1,20 @@
+lib.version: 7.22.0
+
+-buildpath:  \
+	org.camunda.commons:camunda-commons-logging;version=${lib.version}
+
+-maven-dependencies: \
+	org.slf4j;\
+	  groupId=org.slf4j;\
+      artifactId=slf4j-api;\
+      scope=compile
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;org.camunda.commons:camunda-commons-logging:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: org.camunda.commons.logging
+Bundle-Vendor: Camunda service GmbH
+
+Export-Package: org.camunda.commons.logging.*

@@ -1,0 +1,10 @@
+edu.ucar:cdm-core:5.6.0
+edu.ucar:cdm-core:jar:sources:5.6.0
+edu.ucar:cdm-image:5.6.0
+edu.ucar:cdm-mcidas:5.6.0
+edu.ucar:bufr:5.6.0
+edu.ucar:grib:5.6.0
+edu.ucar:opendap:5.6.0
+edu.ucar:netcdf4:5.6.0
+edu.ucar:udunits:5.6.0
+edu.ucar:udunits:jar:sources:5.6.0

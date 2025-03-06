@@ -1,0 +1,32 @@
+lib.version: 7.22.0
+
+-buildpath:  \
+	org.camunda.bpm:camunda-external-task-client;version=${lib.version}
+	
+-maven-dependencies: \
+	camunda-commons-logging;\
+	  groupId=org.camunda.commons;\
+      artifactId=camunda-commons-logging;\
+      version=${lib.version};\
+      scope=compile,\
+    camunda-commons-typed-values;\
+      groupId=org.camunda.commons;\
+      artifactId=camunda-commons-typed-values;\
+      version=${lib.version};\
+      scope=compile,\
+    httpclient5;\
+      groupId=org.apache.httpcomponents.client5;\
+      artifactId=httpclient5;\
+      version=5.4.2;\
+      scope=compile	
+    
+
+-includeresource: \
+	OSGI-OPT/src=@${repo;org.camunda.bpm:camunda-external-task-client:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: org.camunda.bpm.external.task.client
+Bundle-Vendor: camunda services GmbH
+
+Export-Package: org.camunda.bpm.client.*

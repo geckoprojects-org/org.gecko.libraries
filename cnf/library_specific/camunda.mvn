@@ -1,0 +1,10 @@
+#Camunda
+org.camunda.bpm:camunda-external-task-client:7.22.0
+org.camunda.bpm:camunda-external-task-client:jar:sources:7.22.0
+
+org.camunda.commons:camunda-commons-utils:7.22.0
+org.camunda.commons:camunda-commons-utils:jar:sources:7.22.0
+
+org.camunda.commons:camunda-commons-logging:7.22.0
+org.camunda.commons:camunda-commons-logging:jar:sources:7.22.0
+

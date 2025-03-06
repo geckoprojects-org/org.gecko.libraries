@@ -1,0 +1,27 @@
+lib.version: 5.3.3
+
+-buildpath:  \
+	org.apache.httpcomponents.core5:httpcore5-h2;version=${lib.version}
+
+-maven-dependencies: \
+    org.apache.hc.core5;\
+      groupId=org.apache.httpcomponents.core5;\
+      artifactId=httpcore5;\
+      version=${lib.version};\
+      scope=compile,\
+    org.conscrypt;\
+      groupId=org.conscrypt;\
+      artifactId=conscrypt-openjdk-uber;\
+      version=2.5.2;\
+      optional=true;\
+      scope=compile,\
+
+-includeresource: \
+	OSGI-OPT/src=@${repo;org.apache.httpcomponents.core5:httpcore5-h2:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: org.apache.httpcomponents.core5.h2
+Bundle-Vendor: Apache
+
+Export-Package: org.apache.hc.core5.http2.*

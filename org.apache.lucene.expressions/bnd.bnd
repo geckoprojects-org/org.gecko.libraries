@@ -1,0 +1,30 @@
+-buildpath: \
+	org.apache.lucene:lucene-expressions;version=${lucene-version}
+
+-resourceonly: true
+
+Bundle-Version: ${lucene-version}.SNAPSHOT
+
+Export-Package: org.apache.lucene.*
+
+-maven-dependencies: \
+	org.antlr.antlr4-runtime;\
+	  groupId=org.antlr;\
+      artifactId=antlr4-runtime;\
+      version=4.9.3;\
+      scope=compile,\
+	org.objectweb.asm;\
+	  groupId=org.ow2.asm;\
+      artifactId=asm;\
+      version=9.3;\
+      scope=compile,\
+	org.objectweb.asm.commons;\
+	  groupId=org.ow2.asm;\
+      artifactId=asm-commons;\
+      version=9.3;\
+      scope=compile
+      
+
+-includeresource: \
+	@${repo;org.apache.lucene:lucene-expressions;${lucene-version}}!/META-INF/*.txt,\
+	OSGI-OPT/src=@${repo;org.apache.lucene:lucene-expressions:jar:sources;${lucene-version};EXACT}
