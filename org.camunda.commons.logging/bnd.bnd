@@ -16,5 +16,6 @@ Bundle-Version: ${lib.version}
 Bundle-Localization: bundle
 Bundle-Name: org.camunda.commons.logging
 Bundle-Vendor: Camunda service GmbH
+Bundle-SymbolicName: org.camunda.commons.logging
 
 Export-Package: org.camunda.commons.logging.*

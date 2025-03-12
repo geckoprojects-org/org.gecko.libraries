@@ -22,11 +22,13 @@ lib.version: 7.22.0
     
 
 -includeresource: \
-	OSGI-OPT/src=@${repo;org.camunda.bpm:camunda-external-task-client:jar:sources;${lib.version};EXACT}
+	OSGI-OPT/src=@${repo;org.camunda.bpm:camunda-external-task-client:jar:sources;${lib.version};EXACT},\
+	@${repo;org.camunda.bpm:camunda-external-task-client;${lib.version}}!/META-INF/services/*
 
 Bundle-Version: ${lib.version}
 Bundle-Localization: bundle
 Bundle-Name: org.camunda.bpm.external.task.client
 Bundle-Vendor: camunda services GmbH
+Bundle-SymbolicName: org.camunda.bpm.external.task.client
 
 Export-Package: org.camunda.bpm.client.*

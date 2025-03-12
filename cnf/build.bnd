@@ -27,6 +27,15 @@ javac.target: 11
 
 -jpms-module-info:
 
+-plugin.8.Keycloak: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/keycloak.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="Keycloak"
+
 -plugin.7.Http5: \
     aQute.bnd.repository.maven.provider.MavenBndRepository; \
         snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \

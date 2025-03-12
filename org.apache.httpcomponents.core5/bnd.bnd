@@ -10,5 +10,6 @@ Bundle-Version: ${lib.version}
 Bundle-Localization: bundle
 Bundle-Name: org.apache.httpcomponents.core5
 Bundle-Vendor: Apache
+Bundle-SymbolicName: org.apache.httpcomponents.core5
 
 Export-Package: org.apache.hc.core5.*

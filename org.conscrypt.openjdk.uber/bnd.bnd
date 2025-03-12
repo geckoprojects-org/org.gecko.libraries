@@ -9,7 +9,8 @@ lib.version: 2.5.2
 Bundle-Version: ${lib.version}
 Bundle-Localization: bundle
 Bundle-Name: org.conscrypt.openjdk.uber
-Bundle-Vendor: 
+Bundle-Vendor: Google, Inc.
+Bundle-SymbolicName: org.conscrypt.openjdk.uber
 
 Import-Package: \
 	javax.crypto,\

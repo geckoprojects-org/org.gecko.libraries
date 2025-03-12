@@ -39,5 +39,6 @@ Bundle-Version: ${lib.version}
 Bundle-Localization: bundle
 Bundle-Name: org.apache.httpcomponents.client5
 Bundle-Vendor: Apache
+Bundle-SymbolicName: org.apache.httpcomponents.client5
 
 Export-Package: org.apache.hc.client5.http.*

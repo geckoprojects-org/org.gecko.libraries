@@ -1,0 +1,37 @@
+lib.version: 26.0.4
+
+-buildpath:  \
+	org.keycloak:keycloak-client-common-synced;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;org.keycloak:keycloak-client-common-synced:jar:sources;${lib.version};EXACT},\
+	@${repo;org.keycloak:keycloak-client-common-synced;${lib.version}}!/META-INF/services/*
+
+-maven-dependencies: \
+    jackson.datatype.jdk8;\
+	  groupId=com.fasterxml.jackson.datatype;\
+      artifactId=jackson-datatype-jdk8;\
+      scope=compile,\
+    jackson.datatype.jsr310;\
+	  groupId=com.fasterxml.jackson.datatype;\
+      artifactId=jackson-datatype-jsr310;\
+      scope=compile,\
+    eclipse.microprofile.openapi;\
+      groupId=org.eclipse.microprofile.openapi;\
+      artifactId=microprofile-openapi-api;\
+      scope=compile,\
+    jakarta.activation,\
+      groupId=jakarta.activation;\
+      artifactId=jakarta.activation-api;\
+      scope=compile,\
+    jboss.logging,\
+      groupId=org.jboss.logging;\
+      artifactId=jboss-logging;\
+      scope=compile
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: org.keycloak.client.common.synced
+Bundle-Vendor: 
+
+Export-Package: org.keycloak.*

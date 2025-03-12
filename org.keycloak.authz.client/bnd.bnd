@@ -1,0 +1,15 @@
+lib.version: 26.0.4
+
+-buildpath:  \
+	org.keycloak:keycloak-authz-client;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;org.keycloak:keycloak-authz-client:jar:sources;${lib.version};EXACT},\
+	@${repo;org.keycloak:keycloak-authz-client;${lib.version}}!/META-INF/services/*
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: org.keycloak.authz.client
+Bundle-Vendor: 
+
+Export-Package: org.keycloak.authorization.client.*

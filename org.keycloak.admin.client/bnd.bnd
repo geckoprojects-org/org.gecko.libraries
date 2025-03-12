@@ -1,0 +1,58 @@
+lib.version: 26.0.4
+
+-buildpath:  \
+	org.keycloak:keycloak-admin-client;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;org.keycloak:keycloak-admin-client:jar:sources;${lib.version};EXACT}
+
+-maven-dependencies: \
+	jackson.core;\
+	  groupId=com.fasterxml.jackson.core;\
+      artifactId=jackson-core;\
+      scope=compile,\
+    jackson.annotations;\
+	  groupId=com.fasterxml.jackson.core;\
+      artifactId=jackson-annotations;\
+      scope=compile,\
+    jackson.datatype.jdk8;\
+	  groupId=com.fasterxml.jackson.datatype;\
+      artifactId=jackson-datatype-jdk8;\
+      scope=compile,\
+    jackson.datatype.jsr310;\
+	  groupId=com.fasterxml.jackson.datatype;\
+      artifactId=jackson-datatype-jsr310;\
+      scope=compile,\
+    eclipse.microprofile.openapi;\
+      groupId=org.eclipse.microprofile.openapi;\
+      artifactId=microprofile-openapi-api;\
+      scope=compile,\
+    jboss.resteasy.client;\
+      groupId=org.jboss.resteasy;\
+      artifactId=resteasy-client;\
+      scope=compile,\
+    jboss.resteasy.multipart.provider;\
+      groupId=org.jboss.resteasy;\
+      artifactId=resteasy-multipart-provider;\
+      scope=compile,\
+    jboss.resteasy.jackson2.provider;\
+      groupId=org.jboss.resteasy;\
+      artifactId=resteasy-jackson2-provider;\
+      scope=compile,\
+    jboss.resteasy.jaxb.provider;\
+      groupId=org.jboss.resteasy;\
+      artifactId=resteasy-jaxb-provider;\
+      scope=compile,\
+    keycloak.client.common.synced;\
+      groupId=org.keycloak;\
+      artifactId=keycloak-client-common-synced;\
+      version=${lib.version};\
+      scope=compile
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: org.keycloak.admin.client
+Bundle-SymbolicName: org.keycloak.admin.client
+Bundle-Vendor: 
+
+Export-Package: org.keycloak.admin.client.*
