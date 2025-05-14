@@ -1,0 +1,15 @@
+lib.version: 3.0.0
+
+-buildpath:  \
+	org.apache.ibatis:ibatis-core;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;org.apache.ibatis:ibatis-core:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: OSGified org.apache.ibatis.core
+Bundle-SymbolicName: org.apache.ibatis.core
+Bundle-Vendor: Apache
+
+Export-Package: org.apache.ibatis.*
