@@ -12,7 +12,7 @@ dimcBaselining: true
 github-project: org.gecko.libraries
 base-version: 1.0.0
 
-lucene-version: 9.12.0
+lucene-version: 9.12.3
 opennlp-version: 2.3.3
 
 # Maven Central Group-Id

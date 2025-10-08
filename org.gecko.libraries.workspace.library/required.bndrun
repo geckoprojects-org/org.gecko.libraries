@@ -32,10 +32,7 @@
 	bnd.identity;id='org.apache.lucene.queries',\
 	bnd.identity;id='org.apache.lucene.queryparser',\
 	bnd.identity;id='org.apache.lucene.spatial',\
-	bnd.identity;id='org.apache.lucene.suggest',\
-	bnd.identity;id='org.keycloak.admin.client',\
-	bnd.identity;id='org.keycloak.authz.client',\
-	bnd.identity;id='org.keycloak.client.common.synced'
+	bnd.identity;id='org.apache.lucene.suggest'
 -runbundles: \
 	bcprov;version='[1.82.0,1.82.1)',\
 	bctls;version='[1.82.0,1.82.1)',\
