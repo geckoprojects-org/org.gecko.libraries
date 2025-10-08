@@ -2,7 +2,6 @@
 .gradle/
 /target/
 .metadata
-/build/
 /release/
 /build/
 /docker/build

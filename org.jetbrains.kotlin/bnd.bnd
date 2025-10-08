@@ -1,0 +1,26 @@
+kotlin.version: 2.2.20
+
+-resourceonly: true
+
+-buildpath:  \
+	org.jetbrains.kotlin:kotlin-stdlib;version=${kotlin.version},\
+	org.jetbrains.kotlin:kotlin-reflect;version=${kotlin.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;org.jetbrains.kotlin:kotlin-stdlib:jar:sources;${kotlin.version};EXACT},\
+	OSGI-OPT/src=@${repo;org.jetbrains.kotlin:kotlin-reflect:jar:sources;${kotlin.version};EXACT},\
+	@${repo;org.jetbrains.kotlin:kotlin-stdlib;${kotlin.version}}!/META-INF/*module,\
+	@${repo;org.jetbrains.kotlin:kotlin-stdlib;${kotlin.version}}!/META-INF/versions/*,\
+	@${repo;org.jetbrains.kotlin:kotlin-reflect;${kotlin.version}}!/META-INF/*module,\
+	@${repo;org.jetbrains.kotlin:kotlin-reflect;${kotlin.version}}!/META-INF/versions/*,\
+	@${repo;org.jetbrains.kotlin:kotlin-reflect;${kotlin.version}}!/META-INF/services/*,\
+	@${repo;org.jetbrains.kotlin:kotlin-reflect;${kotlin.version}}!/META-INF/proguard/*
+
+Bundle-Version: ${kotlin.version}.SNAPSHOT
+Bundle-Name: Kotlin StdLib Re-packaged JAR
+
+Export-Package: \
+	kotlin*
+Import-Package: \
+	android*;'resolution:'=optional,\
+	*

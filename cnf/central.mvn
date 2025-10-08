@@ -11,9 +11,17 @@ jakarta.ws.rs:jakarta.ws.rs-api:3.1.0
 jakarta.xml.bind:jakarta.xml.bind-api:4.0.2
 #jakarta.json:jakarta.json-api:2.1.3
 
+com.sun.xml.bind:jaxb-osgi:jar:4.0.5
 # used by configurator
 org.eclipse.parsson:jakarta.json:1.1.7
 org.apache.sling:org.apache.sling.commons.johnzon:2.0.0
+
+com.fasterxml.jackson.core:jackson-annotations:2.19.2
+com.fasterxml.jackson.core:jackson-core:2.19.2
+com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.19.2
+com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.19.2
+com.fasterxml.jackson.core:jackson-databind:2.19.2
+com.fasterxml.jackson.module:jackson-module-jakarta-xmlbind-annotations:2.19.2
 
 org.apache.aries.spifly:org.apache.aries.spifly.dynamic.framework.extension:1.3.7
 org.apache.felix:org.apache.felix.cm.json:2.0.6
@@ -117,7 +125,18 @@ org.geckoprojects.bnd:org.gecko.bnd.jacoco.library:2.1.0-SNAPSHOT
 
 org.bndtools:org.bndtools.templates.osgi:7.0.0
 
-com.google.guava:guava:33.3.0-jre
+com.google.guava:guava:33.5.0-jre
+com.google.guava:failureaccess:1.0.3
+com.google.errorprone:error_prone_annotations:2.41.0
+com.google.guava:listenablefuture:1.0
 com.google.re2j:re2j:1.7
 com.google.re2j:re2j:jar:sources:1.7
+
+commons-codec:commons-codec:1.19.0
+org.apache.commons:commons-compress:1.27.1
+commons-io:commons-io:2.20.0
+org.bouncycastle:bcprov-jdk18on:1.82
+org.bouncycastle:bctls-jdk18on:1.82
+org.bouncycastle:bcutil-jdk18on:1.82
+
 

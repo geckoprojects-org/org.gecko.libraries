@@ -26,6 +26,38 @@ javac.target: 11
 
 -jpms-module-info:
 
+-plugin.15.Kotlin: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/kotlin.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="Kotlin"
+-plugin.14.OKHttp: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/okhttp.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="OKHttp"
+-plugin.13.Minio: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/minio.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="MinIO"
+-plugin.12.Kafka: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/kafka.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="Kafka"
 -plugin.11.Hash4j: \
     aQute.bnd.repository.maven.provider.MavenBndRepository; \
         snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \

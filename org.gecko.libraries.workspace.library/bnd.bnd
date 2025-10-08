@@ -1,0 +1,16 @@
+-resourceonly: true
+-include: ${.}/buildpath.bnd	
+mavendeps: ${sjoin;\n; ${template;-maven-dependencies;${@}}}
+
+-includeresource: resources,\
+	{template/geckoLibraries.maven=resources/template/geckoLibraries.maven}	
+	
+Provide-Capability: \
+	${gecko-base}
+
+gecko-base:\
+    bnd.library;\
+        bnd.library     = geckoLibraries; \
+        path            = template
+Bundle-Name: Gecko Libraries
+Bundle-Description: Gecko external OSGified Libraries
