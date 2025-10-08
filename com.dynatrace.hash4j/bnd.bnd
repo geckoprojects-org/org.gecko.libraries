@@ -1,0 +1,14 @@
+lib.version: 0.26.0
+
+-buildpath:  \
+	com.dynatrace.hash4j:hash4j;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;com.dynatrace.hash4j:hash4j:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: Re-packaged hash4j
+Bundle-Vendor: Dynatrace
+
+Export-Package: com.dynatrace.hash4j.*
