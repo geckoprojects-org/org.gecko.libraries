@@ -6,7 +6,7 @@ lib.version: 1.6.0
 -includeresource: \
 	OSGI-OPT/src=@${repo;com.apicatalog:titanium-json-ld:jar:sources;${lib.version};EXACT}
 
-Bundle-Version: ${lib.version}
+Bundle-Version: ${lib.version}.SNAPSHOT
 Bundle-Localization: bundle
 Bundle-Name: OSGified version of titanium-json-ld
 Bundle-SymbolicName: com.apicatalog.titanium.json.ld

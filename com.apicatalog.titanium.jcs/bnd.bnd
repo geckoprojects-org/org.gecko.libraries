@@ -6,7 +6,7 @@ lib.version: 1.0.0
 -includeresource: \
 	OSGI-OPT/src=@${repo;com.apicatalog:titanium-jcs:jar:sources;${lib.version};EXACT}
 
-Bundle-Version: ${lib.version}
+Bundle-Version: ${lib.version}.SNAPSHOT
 Bundle-Localization: bundle
 Bundle-Name: OSGified version of titanium-jcs
 Bundle-Vendor: 
