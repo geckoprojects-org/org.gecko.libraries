@@ -1,0 +1,21 @@
+lib.version: 1.0.2
+
+-buildpath:  \
+	com.apicatalog:titanium-rdf-n-quads;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;com.apicatalog:titanium-rdf-n-quads:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: OSGified version of titanium-rdf-n-quads
+Bundle-Vendor: 
+Bundle-SymbolicName: com.apicatalog.titanium.rdf.n.quads
+
+Export-Package: com.apicatalog.rdf.nquads.*
+
+-maven-dependencies: \
+    com.apicatalog.titanium-rdf-api;\
+	  groupId=com.apicatalog;\
+      artifactId=titanium-rdf-api;\
+      scope=compile

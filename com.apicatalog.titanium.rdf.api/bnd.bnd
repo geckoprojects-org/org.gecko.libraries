@@ -1,0 +1,15 @@
+lib.version: 1.0.0
+
+-buildpath:  \
+	com.apicatalog:titanium-rdf-api;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;com.apicatalog:titanium-rdf-api:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: OSGified version of titanium-rdf-api
+Bundle-Vendor: 
+Bundle-SymbolicName: com.apicatalog.titanium.rdf.api
+
+Export-Package: com.apicatalog.rdf.api.*

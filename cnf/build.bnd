@@ -27,6 +27,15 @@ javac.target: 11
 
 -jpms-module-info:
 
+-plugin.10.TitaniumJsonLD: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/titanium-jsonld.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="TitaniumJsonLD"
+
 -plugin.9.ApacheIbatis: \
     aQute.bnd.repository.maven.provider.MavenBndRepository; \
         snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \

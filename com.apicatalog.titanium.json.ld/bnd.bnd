@@ -1,0 +1,31 @@
+lib.version: 1.6.0
+
+-buildpath:  \
+	com.apicatalog:titanium-json-ld;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;com.apicatalog:titanium-json-ld:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: OSGified version of titanium-json-ld
+Bundle-SymbolicName: com.apicatalog.titanium.json.ld
+Bundle-Vendor: 
+
+Export-Package: \
+	com.apicatalog.jsonld.*,\
+	com.apicatalog.rdf.*
+
+-maven-dependencies: \
+	com.apicatalog.titanium-jcs;\
+	  groupId=com.apicatalog;\
+      artifactId=titanium-jcs;\
+      scope=compile,\
+    com.apicatalog.titanium-rdf-api;\
+	  groupId=com.apicatalog;\
+      artifactId=titanium-rdf-api;\
+      scope=compile,\
+    com.apicatalog.titanium-rdf-n-quads;\
+	  groupId=com.apicatalog;\
+      artifactId=titanium-rdf-n-quads;\
+      scope=compile,\
