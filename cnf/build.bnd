@@ -19,10 +19,10 @@ opennlp-version: 2.3.3
 # For Geckoprojects the groupid must start with org.geckoprojects
 -groupid: org.geckoprojects.libraries
 
-javac.source: 11
-javac.target: 11
+javac.source: 17
+javac.target: 17
 
--require-bnd "(version>=6.3.1)"
+-require-bnd "(version>=7.1.0)"
 
 -jpms-module-info:
 
