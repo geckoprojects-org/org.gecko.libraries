@@ -11,6 +11,8 @@ Export-Package: \
 
 Import-Package: sun.misc;resolution:=optional,\
 	com.sun.management;resolution:=optional,\
+	java.lang.foreign;resolution:=optional,\
+	jdk.*;resolution:=optional,\
 	*
 
 -includeresource: \
