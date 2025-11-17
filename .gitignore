@@ -1,0 +1,13 @@
+.DS_Store
+.gradle/
+/target/
+.metadata
+/release/
+/build/
+/docker/build
+/local/
+/cnf/cache/
+/cnf/build/
+generated/
+bin/
+bin_test/

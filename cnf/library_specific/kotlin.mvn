@@ -1,0 +1,4 @@
+org.jetbrains.kotlin:kotlin-stdlib:2.2.20
+org.jetbrains.kotlin:kotlin-stdlib:jar:sources:2.2.20
+org.jetbrains.kotlin:kotlin-reflect:2.2.20
+org.jetbrains.kotlin:kotlin-reflect:jar:sources:2.2.20

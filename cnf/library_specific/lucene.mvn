@@ -43,6 +43,7 @@ org.apache.lucene:lucene-monitor:jar:sources:${lucene-version}
 org.apache.lucene:lucene-expressions:${lucene-version}
 org.apache.lucene:lucene-expressions:jar:sources:${lucene-version}
 org.ow2.asm:asm:jar:9.7
+org.ow2.asm:asm-tree:9.7
 org.ow2.asm:asm-commons:jar:9.7
 org.ow2.asm:asm-util:jar:9.7
 org.ow2.asm:asm-analysis:jar:9.7
@@ -62,5 +63,5 @@ org.apache.lucene:lucene-analysis-phonetic:${lucene-version}
 org.apache.lucene:lucene-analysis-phonetic:jar:sources:${lucene-version}
 
 org.apache.lucene:lucene-demo:jar:sources:${lucene-version}
-
+org.antlr:antlr4-runtime:4.13.1
 com.carrotsearch:hppc:0.10.0

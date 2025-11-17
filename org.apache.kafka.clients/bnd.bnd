@@ -1,0 +1,26 @@
+lib.version: 3.8.0
+
+-buildpath:  \
+	org.apache.kafka:kafka-clients;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;org.apache.kafka:kafka-clients:jar:sources;${lib.version};EXACT},\
+	@${repo;org.apache.kafka:kafka-clients;${lib.version}}!/META-INF/services/*
+
+Bundle-Version: ${lib.version}.SNAPSHOT
+Bundle-Localization: bundle
+Bundle-Name: Kafka Clients Repackaged
+Bundle-Vendor: Data In Motion consulting GmbH
+
+Export-Package: \
+	kafka.*,\
+	common.message.*,\
+	org.apache.kafka.*
+Import-Package: \
+	sun*;'resolution:'=optional,\
+	com.google*;'resolution:'=optional,\
+	com.ibm*;'resolution:'=optional,\
+	io.grpc*;'resolution:'=optional,\
+	org.ietf*;'resolution:'=optional,\
+	org.jose*;'resolution:'=optional,\
+	*

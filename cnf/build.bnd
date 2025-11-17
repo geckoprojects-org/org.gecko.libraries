@@ -12,20 +12,21 @@ dimcBaselining: true
 github-project: org.gecko.libraries
 base-version: 1.0.0
 
-lucene-version: 9.12.0
+lucene-version: 9.12.3
 opennlp-version: 2.3.3
 
 # Maven Central Group-Id
 # For Geckoprojects the groupid must start with org.geckoprojects
 -groupid: org.geckoprojects.libraries
 
-javac.source: 11
-javac.target: 11
+javac.source: 17
+javac.target: 17
 
--require-bnd "(version>=6.3.1)"
+-require-bnd "(version>=7.1.0)"
 
 -jpms-module-info:
 
+<<<<<<< HEAD
 -plugin.12.MCP: \
     aQute.bnd.repository.maven.provider.MavenBndRepository; \
         snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
@@ -35,6 +36,40 @@ javac.target: 11
         poll.time=-1; \
         name="MCP"
 
+=======
+-plugin.15.Kotlin: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/kotlin.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="Kotlin"
+-plugin.14.OKHttp: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/okhttp.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="OKHttp"
+-plugin.13.Minio: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/minio.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="MinIO"
+-plugin.12.Kafka: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/kafka.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="Kafka"
+>>>>>>> branch 'snapshot' of git@github.com:geckoprojects-org/org.gecko.libraries.git
 -plugin.11.Hash4j: \
     aQute.bnd.repository.maven.provider.MavenBndRepository; \
         snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \

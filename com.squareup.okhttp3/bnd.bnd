@@ -1,0 +1,21 @@
+okhttp.version: 4.12.0
+
+-buildpath:  \
+	com.squareup.okhttp3:okhttp;version=${okhttp.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;com.squareup.okhttp3:okhttp:jar:sources;${okhttp.version};EXACT},\
+	@${repo;com.squareup.okhttp3:okhttp;${okhttp.version}}!/META-INF/*.json
+
+Bundle-Version: ${okhttp.version}.SNAPSHOT
+Bundle-Name: OkHttp3 Re-packaged JAR
+
+Export-Package: \
+	okhttp3*
+Import-Package: \
+	org.openjsse*;'resolution:'=optional,\
+	org.conscrypt*;'resolution:'=optional,\
+	sun.*;'resolution:'=optional,\
+	android*;'resolution:'=optional,\
+	dalvik*;'resolution:'=optional,\
+	*

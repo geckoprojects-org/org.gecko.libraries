@@ -1,0 +1,5 @@
+org.apache.kafka:kafka-clients:3.8.0
+org.apache.kafka:kafka-clients:jar:sources:3.8.0
+com.github.luben:zstd-jni:1.5.7-4
+org.xerial.snappy:snappy-java:1.1.10.8
+org.lz4:lz4-java:1.8.0

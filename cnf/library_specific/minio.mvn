@@ -1,0 +1,6 @@
+
+io.minio:minio:8.5.17
+io.minio:minio:jar:sources:8.5.17
+org.simpleframework:simple-xml:2.7.1
+org.simpleframework:simple-xml:jar:sources:2.7.1
+xpp3:xpp3:1.1.3.3

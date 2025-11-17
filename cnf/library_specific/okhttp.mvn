@@ -1,0 +1,6 @@
+com.squareup.okhttp3:okhttp:4.12.0
+com.squareup.okhttp3:okhttp:jar:sources:4.12.0
+com.squareup.okio:okio:3.16.0
+com.squareup.okio:okio:jar:sources:3.16.0
+com.squareup.okio:okio-jvm:3.16.0
+com.squareup.okio:okio-jvm:jar:sources:3.16.0

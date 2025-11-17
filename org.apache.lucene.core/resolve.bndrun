@@ -1,0 +1,9 @@
+-runfw: org.apache.felix.framework;version='[7.0.5,7.0.5]'
+-runee: JavaSE-21
+-runrequires: \
+	bnd.identity;id='org.apache.lucene.core',\
+	bnd.identity;id='org.apache.lucene.queryparser'
+-runbundles: \
+	org.apache.lucene.core;version='[9.12.0,9.12.1)',\
+	org.apache.lucene.queries;version=snapshot,\
+	org.apache.lucene.queryparser;version=snapshot
