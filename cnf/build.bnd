@@ -26,6 +26,15 @@ javac.target: 11
 
 -jpms-module-info:
 
+-plugin.12.MCP: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/model-context-protocol.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="MCP"
+
 -plugin.11.Hash4j: \
     aQute.bnd.repository.maven.provider.MavenBndRepository; \
         snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
