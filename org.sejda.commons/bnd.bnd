@@ -1,0 +1,15 @@
+lib.version: 3.0.1
+
+-buildpath:  \
+	org.sejda:sejda-commons;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;org.sejda:sejda-commons:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: Re-packaged JAR of sejda.commons
+Bundle-License: Apache 2.0
+
+
+Export-Package: org.sejda.commons.*

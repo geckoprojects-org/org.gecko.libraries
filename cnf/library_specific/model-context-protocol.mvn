@@ -1,5 +1,5 @@
-io.modelcontextprotocol.sdk:mcp-json:0.14.1
-io.modelcontextprotocol.sdk:mcp-json:jar:sources:0.14.1
+io.modelcontextprotocol.sdk:mcp-json:0.17.2
+io.modelcontextprotocol.sdk:mcp-json:jar:sources:0.17.2
 
-io.modelcontextprotocol.sdk:mcp-json-jackson2:0.14.1
-io.modelcontextprotocol.sdk:mcp-json-jackson2:jar:sources:0.14.1
+io.modelcontextprotocol.sdk:mcp-json-jackson2:0.17.2
+io.modelcontextprotocol.sdk:mcp-json-jackson2:jar:sources:0.17.2

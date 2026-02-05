@@ -1,0 +1,14 @@
+lib.version: 5.1.17
+
+-buildpath:  \
+	org.sejda:sejda-core;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;org.sejda:sejda-core:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: Re-packaged JAR of sejda-core
+Bundle-License: AGPL 3.0
+
+Export-Package: org.sejda.*

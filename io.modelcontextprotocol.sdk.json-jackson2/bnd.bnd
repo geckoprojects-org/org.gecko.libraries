@@ -1,4 +1,4 @@
-lib.version: 0.14.1
+lib.version: 0.17.2
 
 -buildpath:  \
 	io.modelcontextprotocol.sdk:mcp-json-jackson2;version=${lib.version}
