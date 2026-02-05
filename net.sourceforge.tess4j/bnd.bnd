@@ -1,0 +1,14 @@
+lib.version: 5.16.0
+
+-buildpath:  \
+	net.sourceforge.tess4j:tess4j;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;net.sourceforge.tess4j:tess4j:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: Re-packaged JAR
+Bundle-Vendor: Tess4J
+
+Export-Package: net.sourceforge.tess4j.*

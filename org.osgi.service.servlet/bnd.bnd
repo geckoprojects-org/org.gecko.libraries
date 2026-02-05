@@ -1,0 +1,14 @@
+lib.version: 2.0.0
+
+-buildpath:  \
+	org.osgi:org.osgi.service.servlet;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;org.osgi:org.osgi.service.servlet:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: Re-packaged JAR
+Bundle-Vendor: OSGi
+
+Export-Package: org.osgi.service.servlet.*

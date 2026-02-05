@@ -1,0 +1,14 @@
+lib.version: 1.3.2.Final
+
+-buildpath:  \
+	io.apicurio:apicurio-registry-rest-client;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;io.apicurio:apicurio-registry-rest-client:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: Re-packaged JAR
+Bundle-Vendor: Apicurio
+
+Export-Package: io.apicurio.registry.client.*

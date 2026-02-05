@@ -1,0 +1,14 @@
+lib.version: 3.1.2
+
+-buildpath:  \
+	io.apicurio:apicurio-registry-common;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;io.apicurio:apicurio-registry-common:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: Re-packaged JAR
+Bundle-Vendor: Apicurio
+
+Export-Package: io.apicurio.registry.*

@@ -25,9 +25,39 @@ javac.target: 17
 -require-bnd "(version>=7.1.0)"
 
 -jpms-module-info:
-
-<<<<<<< HEAD
--plugin.12.MCP: \
+-plugin.20.OSGiServlet: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/osgi-servlet.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="OSGiServlet"
+-plugin.19.Apicurio: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/apicurio.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="Apicurio"
+-plugin.18.Lept4j: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/lept4j.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="Lept4j"
+-plugin.17.Tess4j: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/tess4j.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="Tess4j"
+-plugin.16.MCP: \
     aQute.bnd.repository.maven.provider.MavenBndRepository; \
         snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
         releaseUrl=https://repo.maven.apache.org/maven2/; \
@@ -36,7 +66,6 @@ javac.target: 17
         poll.time=-1; \
         name="MCP"
 
-=======
 -plugin.15.Kotlin: \
     aQute.bnd.repository.maven.provider.MavenBndRepository; \
         snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
@@ -61,6 +90,7 @@ javac.target: 17
         readOnly=true; \
         poll.time=-1; \
         name="MinIO"
+        
 -plugin.12.Kafka: \
     aQute.bnd.repository.maven.provider.MavenBndRepository; \
         snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
@@ -69,7 +99,7 @@ javac.target: 17
         readOnly=true; \
         poll.time=-1; \
         name="Kafka"
->>>>>>> branch 'snapshot' of git@github.com:geckoprojects-org/org.gecko.libraries.git
+
 -plugin.11.Hash4j: \
     aQute.bnd.repository.maven.provider.MavenBndRepository; \
         snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \

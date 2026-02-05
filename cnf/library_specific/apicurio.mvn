@@ -1,0 +1,8 @@
+io.apicurio:apicurio-registry-client:3.0.0.M2
+io.apicurio:apicurio-registry-client:jar:sources:3.0.0.M2
+
+io.apicurio:apicurio-registry-common:3.1.2
+io.apicurio:apicurio-registry-common:jar:sources:3.1.2
+
+io.apicurio:apicurio-registry-rest-client:1.3.2.Final
+io.apicurio:apicurio-registry-rest-client:jar:sources:1.3.2.Final
