@@ -1,4 +1,4 @@
-lib.version: 2.4.2
+lib.version: 2.5.4
 
 -buildpath:  \
 	net.datafaker:datafaker;version=${lib.version}

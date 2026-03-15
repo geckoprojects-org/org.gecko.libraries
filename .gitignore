@@ -1,13 +1,8 @@
 .DS_Store
-.gradle/
-/target/
-.metadata
-/release/
-/build/
-/docker/build
-/local/
-/cnf/cache/
-/cnf/build/
+/.gradle/
 generated/
+/.metadata/
+build/
 bin/
 bin_test/
+/cnf/cache
