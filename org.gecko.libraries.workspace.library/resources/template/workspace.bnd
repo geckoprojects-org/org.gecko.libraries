@@ -2,7 +2,7 @@
 	aQute.bnd.repository.maven.provider.MavenBndRepository;\
 		releaseUrl			= "https://repo.maven.apache.org/maven2/,https://devel.data-in-motion.biz/nexus/repository/dim-release/"; \
 		snapshotUrl			= "https://devel.data-in-motion.biz/nexus/repository/dim-snapshot/";\
-		index            = "$\{.}/geckoLibraries.maven" ;\
+		index            = "${.}/geckoLibraries.maven" ;\
 		readOnly            = true;\
 		name="Gecko Libraries - ${Bundle-Version}"
 		
