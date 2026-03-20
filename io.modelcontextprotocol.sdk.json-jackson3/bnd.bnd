@@ -1,0 +1,7 @@
+Bundle-SymbolicName: io.modelcontextprotocol.sdk.mcp-json-jackson3.fragment
+Bundle-Version: 1.1.0
+# The Host bundle you are attaching to
+Fragment-Host: io.modelcontextprotocol.sdk.mcp-json-jackson3;bundle-version=1.1.0
+# The extra packages you want to expose
+Export-Package: io.modelcontextprotocol.json*
+-buildpath: io.modelcontextprotocol.sdk.mcp-json-jackson3

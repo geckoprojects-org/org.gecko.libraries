@@ -1,5 +1,14 @@
 io.modelcontextprotocol.sdk:mcp-json:0.17.2
 io.modelcontextprotocol.sdk:mcp-json:jar:sources:0.17.2
 
-io.modelcontextprotocol.sdk:mcp-json-jackson2:0.17.2
-io.modelcontextprotocol.sdk:mcp-json-jackson2:jar:sources:0.17.2
+io.modelcontextprotocol.sdk:mcp-json-jackson2:0.18.0
+io.modelcontextprotocol.sdk:mcp-json-jackson2:jar:sources:0.18.0
+
+io.modelcontextprotocol.sdk:mcp-json-jackson3:1.1.0
+io.modelcontextprotocol.sdk:mcp-json-jackson3:jar:sources:1.1.0
+
+io.projectreactor:reactor-core:3.7.0
+org.reactivestreams:reactive-streams:1.0.4
+com.networknt:json-schema-validator:3.0.0
+org.snakeyaml:snakeyaml-engine:2.10
+com.ethlo.time:itu:1.14.0
