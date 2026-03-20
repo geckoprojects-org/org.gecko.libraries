@@ -25,6 +25,7 @@ header:
     - '**/*.bnd'
     - '**/*.bndrun'
     - '**/*.xml'
+    - '**/buildfiles'
     - '**/*.ecore'
     - '**/*.genmodel'
     - '**/*.md'
