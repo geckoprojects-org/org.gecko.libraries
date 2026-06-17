@@ -1,0 +1,14 @@
+lib.version: 1.0.0.1
+
+-buildpath:  \
+	com.github.stephenc.jcip:jcip-annotations;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;com.github.stephenc.jcip:jcip-annotations:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: Re-packaged JAR
+Bundle-Vendor: Apache License, Version 2.0
+
+Export-Package: net.jcip.*
