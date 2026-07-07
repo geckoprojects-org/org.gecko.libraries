@@ -1,0 +1,17 @@
+lib.version: 6.1.0
+
+-buildpath:  \
+	org.apache.jena:jena-base;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;org.apache.jena:jena-base:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Name: Re-packaged Jena Base JAR
+Bundle-Vendor: Apache Foundation, Data In Motion Consulting GmbH
+
+Export-Package: org.apache.jena.*
+Import-Package: \
+	org.slf4j.bridge;'resolution:'=optional,\
+	org.apache.logging.*;'resolution:'=optional,\
+	*

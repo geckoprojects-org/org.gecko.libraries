@@ -1,0 +1,14 @@
+lib.version: 1.6.14
+
+-buildpath:  \
+	org.roaringbitmap:RoaringBitmap;version=${lib.version}
+	
+#-includeresource: \
+#	OSGI-OPT/src=@${repo;org.roaringbitmap:RoaringBitmap:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: Re-packaged Roaring Bitmap
+Bundle-Vendor: Roaring Bitmap
+
+Export-Package: org.roaringbitmap.*

@@ -1,25 +1,26 @@
-lib.version: 1.7.0
+lib.version: 0.14.0
 
 -buildpath:  \
-	com.apicatalog:titanium-json-ld;version=${lib.version}
+	com.apicatalog:tree-io-api;version=${lib.version}
 	
 -includeresource: \
-	OSGI-OPT/src=@${repo;com.apicatalog:titanium-json-ld:jar:sources;${lib.version};EXACT}
+	OSGI-OPT/src=@${repo;com.apicatalog:tree-io-api:jar:sources;${lib.version};EXACT}
 
 Bundle-Version: ${lib.version}.SNAPSHOT
 Bundle-Localization: bundle
-Bundle-Name: OSGified version of titanium-json-ld
-Bundle-SymbolicName: com.apicatalog.titanium.json.ld
-Bundle-Vendor: 
+Bundle-Name: OSGified version of tree-io-api
 
 Export-Package: \
-	com.apicatalog.jsonld.*,\
-	com.apicatalog.rdf.*
+	com.apicatalog.tree.*
 
 -maven-dependencies: \
 	com.apicatalog.titanium-jcs;\
 	  groupId=com.apicatalog;\
       artifactId=titanium-jcs;\
+      scope=compile,\
+	com.apicatalog.tree-io-api;\
+	  groupId=com.apicatalog;\
+      artifactId=tree-io-api;\
       scope=compile,\
     com.apicatalog.titanium-rdf-api;\
 	  groupId=com.apicatalog;\

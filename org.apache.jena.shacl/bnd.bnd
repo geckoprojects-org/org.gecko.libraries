@@ -1,0 +1,16 @@
+lib.version: 6.1.0
+
+-buildpath:  \
+	org.apache.jena:jena-shacl;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;org.apache.jena:jena-shacl:jar:sources;${lib.version};EXACT}
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: Apache Jena SHACL Re-packaged JAR
+Bundle-Vendor: Apache Foundation, Data In Motion Consulting GmbH
+
+Export-Package: \
+	org.apache.jena.*,\
+	

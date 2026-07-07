@@ -1,0 +1,16 @@
+lib.version: 6.1.0
+
+-buildpath:  \
+	org.apache.jena:jena-core;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;org.apache.jena:jena-core:jar:sources;${lib.version};EXACT},\
+	@${repo;org.apache.jena:jena-core:jar;${lib.version};EXACT}!/META-INF/services/*,\
+	@${repo;org.apache.jena:jena-core:jar;${lib.version};EXACT}!/etc/*,\
+	@${repo;org.apache.jena:jena-core:jar;${lib.version};EXACT}!/ont-policy.rdf
+
+Bundle-Version: ${lib.version}
+Bundle-Name: Re-packaged Jena Core JAR
+Bundle-Vendor: Apache Foundation, Data In Motion Consulting GmbH
+
+Export-Package: org.apache.jena.*

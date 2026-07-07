@@ -1,5 +1,5 @@
 -runfw: org.apache.felix.framework;version='[7.0.5,7.0.5]'
--runee: JavaSE-17
+-runee: JavaSE-21
 
 #example
 -runrequires: \
@@ -32,7 +32,12 @@
 	bnd.identity;id='org.apache.lucene.queries',\
 	bnd.identity;id='org.apache.lucene.queryparser',\
 	bnd.identity;id='org.apache.lucene.spatial',\
-	bnd.identity;id='org.apache.lucene.suggest'
+	bnd.identity;id='org.apache.lucene.suggest',\
+	bnd.identity;id='org.apache.jena.arq',\
+	bnd.identity;id='org.apache.jena.shacl',\
+	bnd.identity;id='org.apache.jena.dboe',\
+	bnd.identity;id='org.apache.jena.commonsrdf',\
+	bnd.identity;id='org.apache.jena.rdfconnection'
 -runbundles: \
 	bcprov;version='[1.82.0,1.82.1)',\
 	bctls;version='[1.82.0,1.82.1)',\
@@ -47,7 +52,6 @@
 	com.squareup.okio;version='[3.16.0,3.16.1)',\
 	io.minio;version=snapshot,\
 	lz4-java;version='[1.8.0,1.8.1)',\
-	org.apache.commons.commons-compress;version='[1.27.1,1.27.2)',\
 	org.apache.kafka.clients;version=snapshot,\
 	org.jetbrains.kotlin;version=snapshot,\
 	org.jsr-305;version='[3.0.2,3.0.3)',\
@@ -68,7 +72,6 @@
 	org.gecko.ucar.units;version=snapshot,\
 	com.ibm.icu;version='[73.1.0,73.1.1)',\
 	org.antlr.antlr4-runtime;version='[4.13.1,4.13.2)',\
-	org.apache.commons.commons-codec;version='[1.19.0,1.19.1)',\
 	org.apache.lucene.analysis.icu;version=snapshot,\
 	org.apache.lucene.analysis.morfologik;version=snapshot,\
 	org.apache.lucene.analysis.opennlp;version=snapshot,\
@@ -97,4 +100,26 @@
 	org.objectweb.asm;version='[9.7.0,9.7.1)',\
 	org.objectweb.asm.commons;version='[9.7.0,9.7.1)',\
 	org.objectweb.asm.tree;version='[9.7.0,9.7.1)',\
-	com.googlecode.libphonenumber;version='[9.0.26,9.0.27)'
+	com.googlecode.libphonenumber;version='[9.0.26,9.0.27)',\
+	com.apicatalog.titanium.tree.io.api;version=snapshot,\
+	com.github.andrewoma.dexx.collection;version='[0.7.0,0.7.1)',\
+	com.github.ben-manes.caffeine;version='[3.2.4,3.2.5)',\
+	com.google.gson;version='[2.14.0,2.14.1)',\
+	com.google.protobuf;version='[4.35.1,4.35.2)',\
+	org.apache.commons.commons-codec;version='[1.22.0,1.22.1)',\
+	org.apache.commons.commons-collections4;version='[4.5.0,4.5.1)',\
+	org.apache.commons.commons-compress;version='[1.28.0,1.28.1)',\
+	org.apache.commons.commons-csv;version='[1.14.1,1.14.2)',\
+	org.apache.commons.commons-io;version='[2.22.0,2.22.1)',\
+	org.apache.commons.lang3;version='[3.20.0,3.20.1)',\
+	org.apache.commons.rdf.api;version='[0.5.0,0.5.1)',\
+	org.apache.jena.arq;version=snapshot,\
+	org.apache.jena.base;version=snapshot,\
+	org.apache.jena.commonsrdf;version=snapshot,\
+	org.apache.jena.core;version=snapshot,\
+	org.apache.jena.dboe;version=snapshot,\
+	org.apache.jena.iri;version=snapshot,\
+	org.apache.jena.langtag;version=snapshot,\
+	org.apache.jena.rdfconnection;version=snapshot,\
+	org.apache.jena.shacl;version=snapshot,\
+	org.roaringbitmap.roaringbitmap;version=snapshot

@@ -1,0 +1,23 @@
+lib.version: 6.1.0
+
+-buildpath:  \
+	org.apache.jena:jena-dboe-base;version=${lib.version},\
+	org.apache.jena:jena-dboe-index;version=${lib.version},\
+	org.apache.jena:jena-dboe-storage;version=${lib.version},\
+	org.apache.jena:jena-dboe-trans-data;version=${lib.version},\
+	org.apache.jena:jena-dboe-transaction;version=${lib.version}
+	
+-includeresource: \
+	OSGI-OPT/src=@${repo;org.apache.jena:jena-dboe-base:jar:sources;${lib.version};EXACT},\
+	OSGI-OPT/src=@${repo;org.apache.jena:jena-dboe-index:jar:sources;${lib.version};EXACT};onduplicate:=SKIP,\
+	OSGI-OPT/src=@${repo;org.apache.jena:jena-dboe-storage:jar:sources;${lib.version};EXACT};onduplicate:=SKIP,\
+	OSGI-OPT/src=@${repo;org.apache.jena:jena-dboe-trans-data:jar:sources;${lib.version};EXACT};onduplicate:=SKIP,\
+	OSGI-OPT/src=@${repo;org.apache.jena:jena-dboe-transaction:jar:sources;${lib.version};EXACT};onduplicate:=SKIP
+
+Bundle-Version: ${lib.version}
+Bundle-Localization: bundle
+Bundle-Name: Apache Jena DBOE Re-packaged JAR
+Bundle-Vendor: Apache Foundation, Data In Motion Consulting GmbH
+
+Export-Package: \
+	org.apache.jena.*,\

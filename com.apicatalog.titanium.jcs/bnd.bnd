@@ -1,4 +1,4 @@
-lib.version: 1.0.0
+lib.version: 2.0.0
 
 -buildpath:  \
 	com.apicatalog:titanium-jcs;version=${lib.version}
