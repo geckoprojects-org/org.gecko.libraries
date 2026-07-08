@@ -14,3 +14,11 @@ Bundle-Name: Re-packaged Jena Core JAR
 Bundle-Vendor: Apache Foundation, Data In Motion Consulting GmbH
 
 Export-Package: org.apache.jena.*
+
+# Advertise the subsystem lifecycle provider (InitJenaCore) so SPI-Fly wires it
+# to the jena-base ServiceLoader consumer.
+Provide-Capability: \
+	osgi.serviceloader;osgi.serviceloader="org.apache.jena.sys.JenaSubsystemLifecycle";register:="org.apache.jena.sys.InitJenaCore"
+	
+Require-Capability: \
+    osgi.extender;filter:="(&(osgi.extender=osgi.serviceloader.registrar)(version>=1.0)(!(version>=2.0)))"

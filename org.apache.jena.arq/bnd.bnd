@@ -4,7 +4,8 @@ lib.version: 6.1.0
 	org.apache.jena:jena-arq;version=${lib.version}
 	
 -includeresource: \
-	OSGI-OPT/src=@${repo;org.apache.jena:jena-arq:jar:sources;${lib.version};EXACT}
+	OSGI-OPT/src=@${repo;org.apache.jena:jena-arq:jar:sources;${lib.version};EXACT},\
+	@${repo;org.apache.jena:jena-arq:jar;${lib.version};EXACT}!/META-INF/services/*
 
 Bundle-Version: ${lib.version}
 Bundle-Localization: bundle
@@ -13,7 +14,17 @@ Bundle-Vendor: Apache Foundation, Data In Motion Consulting GmbH
 
 Export-Package: \
 	org.apache.jena.*,\
-	
+
 Import-Package: \
 	org.apache.thrift.*;'resolution:'=optional,\
 	*
+
+# Advertise the subsystem lifecycle providers (InitRIOT/InitARQ/InitRDFS) so
+# SPI-Fly wires them to the jena-base ServiceLoader consumer.
+Provide-Capability: \
+	osgi.serviceloader;osgi.serviceloader="org.apache.jena.sys.JenaSubsystemLifecycle";register:="org.apache.jena.riot.system.InitRIOT",\
+	osgi.serviceloader;osgi.serviceloader="org.apache.jena.sys.JenaSubsystemLifecycle";register:="org.apache.jena.sparql.system.InitARQ",\
+	osgi.serviceloader;osgi.serviceloader="org.apache.jena.sys.JenaSubsystemLifecycle";register:="org.apache.jena.rdfs.sys.InitRDFS"
+	
+Require-Capability: \
+    osgi.extender;filter:="(&(osgi.extender=osgi.serviceloader.registrar)(version>=1.0)(!(version>=2.0)))"

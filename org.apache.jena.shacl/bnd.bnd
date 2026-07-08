@@ -4,7 +4,8 @@ lib.version: 6.1.0
 	org.apache.jena:jena-shacl;version=${lib.version}
 	
 -includeresource: \
-	OSGI-OPT/src=@${repo;org.apache.jena:jena-shacl:jar:sources;${lib.version};EXACT}
+	OSGI-OPT/src=@${repo;org.apache.jena:jena-shacl:jar:sources;${lib.version};EXACT},\
+	@${repo;org.apache.jena:jena-shacl:jar;${lib.version};EXACT}!/META-INF/services/*
 
 Bundle-Version: ${lib.version}
 Bundle-Localization: bundle
@@ -13,4 +14,10 @@ Bundle-Vendor: Apache Foundation, Data In Motion Consulting GmbH
 
 Export-Package: \
 	org.apache.jena.*,\
+
+# Advertise the subsystem lifecycle provider (InitShacl) for SPI-Fly mediation.
+Provide-Capability: \
+	osgi.serviceloader;osgi.serviceloader="org.apache.jena.sys.JenaSubsystemLifecycle";register:="org.apache.jena.shacl.sys.InitShacl"
 	
+Require-Capability: \
+    osgi.extender;filter:="(&(osgi.extender=osgi.serviceloader.registrar)(version>=1.0)(!(version>=2.0)))"

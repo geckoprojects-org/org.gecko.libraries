@@ -4,7 +4,8 @@ lib.version: 6.1.0
 	org.apache.jena:jena-commonsrdf;version=${lib.version}
 	
 -includeresource: \
-	OSGI-OPT/src=@${repo;org.apache.jena:jena-commonsrdf:jar:sources;${lib.version};EXACT}
+	OSGI-OPT/src=@${repo;org.apache.jena:jena-commonsrdf:jar:sources;${lib.version};EXACT},\
+	@${repo;org.apache.jena:jena-shacl:jar;${lib.version};EXACT}!/META-INF/services/*
 
 Bundle-Version: ${lib.version}
 Bundle-Localization: bundle

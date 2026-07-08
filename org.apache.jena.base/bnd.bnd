@@ -15,3 +15,11 @@ Import-Package: \
 	org.slf4j.bridge;'resolution:'=optional,\
 	org.apache.logging.*;'resolution:'=optional,\
 	*
+
+# jena-base hosts SubsystemRegistryServiceLoader, which does
+# ServiceLoader.load(JenaSubsystemLifecycle, jena-base-classloader). In OSGi that
+# classloader can't see the providers in the other Jena bundles, so Aries SPI-Fly
+# must mediate the call: mark this bundle as the ServiceLoader consumer.
+Require-Capability: \
+	osgi.serviceloader;osgi.serviceloader="org.apache.jena.sys.JenaSubsystemLifecycle";filter:="(osgi.serviceloader=org.apache.jena.sys.JenaSubsystemLifecycle)";cardinality:=multiple;resolution:=optional,\
+	osgi.extender;filter:="(osgi.extender=osgi.serviceloader.processor)"
