@@ -6,7 +6,7 @@ lib.version: 6.1.0
 -includeresource: \
 	OSGI-OPT/src=@${repo;org.apache.jena:jena-iri3986:jar:sources;${lib.version};EXACT}
 
-Bundle-Version: ${lib.version}
+Bundle-Version: ${lib.version}.SNAPSHOT
 Bundle-Name: Re-packaged Jena Iri JAR
 Bundle-Vendor: Apache Foundation, Data In Motion Consulting GmbH
 

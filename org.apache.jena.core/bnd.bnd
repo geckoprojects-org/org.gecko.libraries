@@ -9,7 +9,7 @@ lib.version: 6.1.0
 	@${repo;org.apache.jena:jena-core:jar;${lib.version};EXACT}!/etc/*,\
 	@${repo;org.apache.jena:jena-core:jar;${lib.version};EXACT}!/ont-policy.rdf
 
-Bundle-Version: ${lib.version}
+Bundle-Version: ${lib.version}.SNAPSHOT
 Bundle-Name: Re-packaged Jena Core JAR
 Bundle-Vendor: Apache Foundation, Data In Motion Consulting GmbH
 
