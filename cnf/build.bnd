@@ -25,6 +25,14 @@ javac.target: 17
 -require-bnd "(version>=7.1.0)"
 
 -jpms-module-info:
+-plugin.24.grpc: \
+    aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \
+        releaseUrl=https://repo.maven.apache.org/maven2/; \
+        index=${.}/library_specific/grpc.mvn; \
+        readOnly=true; \
+        poll.time=-1; \
+        name="gRPC"
 -plugin.23.Jena: \
     aQute.bnd.repository.maven.provider.MavenBndRepository; \
         snapshotUrl="https://oss.sonatype.org/content/repositories/snapshots/"; \

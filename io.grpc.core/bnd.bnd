@@ -1,0 +1,50 @@
+lib.version: 1.82.2
+
+# One bundle for the whole io.grpc.* runtime core: grpc-api/-core/-stub/-protobuf(-lite)/-util.
+# io.grpc is a split package across the upstream jars, and the grpc-util LoadBalancers
+# (round_robin, outlier detection) are discovered via ServiceLoader from grpc-core — both only
+# work when everything lives in one bundle. Transports (netty/okhttp) stay separate; grpc-api's
+# ManagedChannelRegistry finds them via Class.forName fallback, hence the optional imports.
+# Deliberately NOT included: grpc-xds/-alts/-auth/-googleapis/-services (Google-Cloud/mesh stack)
+# — they depend on netty-shaded internals + non-OSGi libs (google-auth-library, protobuf-java-util,
+# re2j, grpc-rls) and would break the core/transport separation.
+
+-buildpath:  \
+	io.grpc:grpc-api;version=${lib.version},\
+	io.grpc:grpc-core;version=${lib.version},\
+	io.grpc:grpc-stub;version=${lib.version},\
+	io.grpc:grpc-protobuf;version=${lib.version},\
+	io.grpc:grpc-protobuf-lite;version=${lib.version},\
+	io.grpc:grpc-util;version=${lib.version}
+
+-includeresource: \
+	OSGI-OPT/src=@${repo;io.grpc:grpc-api:jar:sources;${lib.version};EXACT},\
+	OSGI-OPT/src=@${repo;io.grpc:grpc-core:jar:sources;${lib.version};EXACT},\
+	OSGI-OPT/src=@${repo;io.grpc:grpc-stub:jar:sources;${lib.version};EXACT},\
+	OSGI-OPT/src=@${repo;io.grpc:grpc-protobuf:jar:sources;${lib.version};EXACT},\
+	OSGI-OPT/src=@${repo;io.grpc:grpc-protobuf-lite:jar:sources;${lib.version};EXACT},\
+	OSGI-OPT/src=@${repo;io.grpc:grpc-util:jar:sources;${lib.version};EXACT},\
+	@${repo;io.grpc:grpc-core:jar;${lib.version};EXACT}!/META-INF/services/*,\
+	@${repo;io.grpc:grpc-util:jar;${lib.version};EXACT}!/META-INF/services/*;onduplicate:=MERGE
+
+Bundle-Version: ${lib.version}.SNAPSHOT
+Bundle-Name: Re-packaged gRPC Core JAR
+Bundle-Vendor: gRPC, Data In Motion Consulting GmbH
+
+Export-Package: io.grpc.*;version=${lib.version}
+
+# optional: transports + hooks that grpc probes via Class.forName (bnd turns the string
+# literals into imports), the StatusProto extra (com.google.rpc, needs proto-google-common-protos),
+# the conscrypt security provider (probed, JDK SSL works without) and the jsr305 annotations.
+Import-Package: \
+	com.google.rpc;resolution:=optional,\
+	io.perfmark;resolution:=optional,\
+	io.grpc.override;resolution:=optional,\
+	io.grpc.binder.*;resolution:=optional,\
+	io.grpc.census;resolution:=optional,\
+	io.grpc.netty;resolution:=optional,\
+	io.grpc.okhttp;resolution:=optional,\
+	com.sun.jndi.dns;resolution:=optional,\
+	org.conscrypt;resolution:=optional,\
+	javax.annotation;resolution:=optional,\
+	*

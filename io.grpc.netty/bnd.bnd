@@ -1,0 +1,38 @@
+lib.version: 1.82.2
+
+# Wraps the UNSHADED io.grpc:grpc-netty. The official netty jars are OSGi bundles already
+# (io.netty.*) and are consumed as-is from grpc.mvn — only the grpc-netty classes need a
+# manifest. (grpc-netty-shaded is useless here: it relocates everything, including grpc-netty
+# itself, under io.grpc.netty.shaded.* — there is no io.grpc.netty package in that jar.)
+# io.grpc.core discovers the NettyChannelProvider via its optional io.grpc.netty import
+# (Class.forName fallback in ManagedChannelRegistry) — no SPI-Fly needed.
+
+-buildpath:  \
+	io.grpc.core;version=snapshot,\
+	io.grpc:grpc-netty;version=${lib.version},\
+	io.netty:netty-buffer,\
+	io.netty:netty-codec,\
+	io.netty:netty-codec-http,\
+	io.netty:netty-codec-http2,\
+	io.netty:netty-common,\
+	io.netty:netty-handler,\
+	io.netty:netty-handler-proxy,\
+	io.netty:netty-resolver,\
+	io.netty:netty-transport,\
+	io.netty:netty-transport-native-unix-common
+
+-includeresource: \
+	OSGI-OPT/src=@${repo;io.grpc:grpc-netty:jar:sources;${lib.version};EXACT},\
+	@${repo;io.grpc:grpc-netty:jar;${lib.version};EXACT}!/META-INF/services/*
+
+Bundle-Version: ${lib.version}.SNAPSHOT
+Bundle-Name: Re-packaged gRPC Netty Transport JAR
+Bundle-Vendor: gRPC, Data In Motion Consulting GmbH
+
+Export-Package: io.grpc.netty;version=${lib.version}
+
+Import-Package: \
+	io.netty.channel.epoll;resolution:=optional,\
+	io.netty.channel.unix;resolution:=optional,\
+	io.perfmark;resolution:=optional,\
+	*

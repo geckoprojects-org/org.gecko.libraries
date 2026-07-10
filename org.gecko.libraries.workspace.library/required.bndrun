@@ -37,7 +37,9 @@
 	bnd.identity;id='org.apache.jena.shacl',\
 	bnd.identity;id='org.apache.jena.dboe',\
 	bnd.identity;id='org.apache.jena.commonsrdf',\
-	bnd.identity;id='org.apache.jena.rdfconnection'
+	bnd.identity;id='org.apache.jena.rdfconnection',\
+	bnd.identity;id='io.grpc.core',\
+	bnd.identity;id='io.grpc.netty'
 -runbundles: \
 	bcprov;version='[1.82.0,1.82.1)',\
 	bctls;version='[1.82.0,1.82.1)',\
@@ -46,7 +48,6 @@
 	com.fasterxml.jackson.core.jackson-core;version='[2.19.2,2.19.3)',\
 	com.fasterxml.jackson.core.jackson-databind;version='[2.19.2,2.19.3)',\
 	com.github.luben.zstd-jni;version='[1.5.7,1.5.8)',\
-	com.google.guava;version='[33.5.0,33.5.1)',\
 	com.google.guava.failureaccess;version='[1.0.3,1.0.4)',\
 	com.squareup.okhttp3;version=snapshot,\
 	com.squareup.okio;version='[3.16.0,3.16.1)',\
@@ -122,4 +123,19 @@
 	org.apache.jena.langtag;version=snapshot,\
 	org.apache.jena.rdfconnection;version=snapshot,\
 	org.apache.jena.shacl;version=snapshot,\
-	org.roaringbitmap.roaringbitmap;version=snapshot
+	org.roaringbitmap.roaringbitmap;version=snapshot,\
+	com.google.errorprone.annotations;version='[2.50.0,2.50.1)',\
+	com.google.guava;version='[33.6.0,33.6.1)',\
+	io.grpc.core;version=snapshot,\
+	io.grpc.netty;version=snapshot,\
+	io.netty.buffer;version='[4.1.133,4.1.134)',\
+	io.netty.codec;version='[4.1.133,4.1.134)',\
+	io.netty.codec-http;version='[4.1.133,4.1.134)',\
+	io.netty.codec-http2;version='[4.1.133,4.1.134)',\
+	io.netty.codec-socks;version='[4.1.133,4.1.134)',\
+	io.netty.common;version='[4.1.133,4.1.134)',\
+	io.netty.handler;version='[4.1.133,4.1.134)',\
+	io.netty.handler-proxy;version='[4.1.133,4.1.134)',\
+	io.netty.resolver;version='[4.1.133,4.1.134)',\
+	io.netty.transport;version='[4.1.133,4.1.134)',\
+	io.netty.transport-native-unix-common;version='[4.1.133,4.1.134)'
