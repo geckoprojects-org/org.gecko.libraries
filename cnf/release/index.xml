@@ -1,2 +1,2077 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Release" increment="1732713709684"/>
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="Release" increment="1785938336320">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Eclipse Public License 2.0"/>
+      <attribute name="copyright" value="Data In Motion Consulting GmbH - All rights reserved"/>
+      <attribute name="osgi.identity" value="org.apache.lucene.analysis.icu"/>
+      <attribute name="documentation" value="https://github.com/geckoprojects-org/org.gecko.libraries"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.ibm.icu.text,org.apache.lucene.analysis,org.apache.lucene.analysis.charfilter,org.apache.lucene.analysis.icu.tokenattributes,org.apache.lucene.document,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.analysis.icu"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.icu"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-732774852,-1178750066,-1253471241,-644777890,1160366796,-420302752,-1438913398,1700942442,1847446336,143592514,-1784620535,1604600513" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.ibm.icu.text,org.apache.lucene.analysis,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.analysis.icu"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.icu.segmentation"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1668484762,-1722225135,-1845996698,-909727457,-976206116,209920318,169562766,1341591161" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="com.ibm.icu.text,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.analysis.icu"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.icu.tokenattributes"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1523265079,648898033,-1529226319" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.apache.lucene.analysis.icu"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.apache.lucene.analysis.icu"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="149121" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.apache.lucene.analysis.icu/org.apache.lucene.analysis.icu-10.5.0.jar"/>
+      <attribute name="osgi.content" value="E8F9F60C886C48D4B61E7129A79EC93CE7997CCC7243EA545802A3D525D4A392"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.ibm.icu.lang)"/>
+      <attribute name="osgi.wiring.package" value="com.ibm.icu.lang"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.ibm.icu.text)"/>
+      <attribute name="osgi.wiring.package" value="com.ibm.icu.text"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.ibm.icu.util)"/>
+      <attribute name="osgi.wiring.package" value="com.ibm.icu.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.io)"/>
+      <attribute name="osgi.wiring.package" value="java.io"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
+      <attribute name="osgi.wiring.package" value="java.lang"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.invoke)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.invoke"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.nio.charset)"/>
+      <attribute name="osgi.wiring.package" value="java.nio.charset"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.text)"/>
+      <attribute name="osgi.wiring.package" value="java.text"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util)"/>
+      <attribute name="osgi.wiring.package" value="java.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis.charfilter)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.charfilter"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis.core)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.core"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis.standard)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.standard"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis.tokenattributes)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.tokenattributes"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.document)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.document"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.index)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.index"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.internal.hppc)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.internal.hppc"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.util)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=21))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Eclipse Public License 2.0"/>
+      <attribute name="copyright" value="Data In Motion Consulting GmbH - All rights reserved"/>
+      <attribute name="osgi.identity" value="org.apache.lucene.core"/>
+      <attribute name="documentation" value="https://github.com/geckoprojects-org/org.gecko.libraries"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.util.automaton"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1563361812,-482834109,637250023,-1541776920,-232682833,-959795002,-884334355,-2076800484,-1415644213,620647583,731190382,-343652942,-87113850,917115616,-2029030736,219533462,-1744694570,-847346215,-847340321,-1823748466,-2127840820,628825756,653668521,-654130392,1785759749,-973082741,1515556647,80988633,-1788854077,-172703607,-1231186721,261886522,1847253219,-206636367,121083161,175865529,812449097,-583881654,-880719300,2146092791,703630867,-853398277" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.ar"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,-924438126,38298377,975215041,356637937,1264328077,1348649661,-643494907" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.bg"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,-1764277795,1632257816,-903358766,-1501870502" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.bn"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,-329780856,-313643693,-2080733129,591624039,1499314179,101357447,899708239" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.boost"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1154038567,1373635555" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.br"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,521691664,-574347637,-741588993,1481364423" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.ca"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,-207193836" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.charfilter"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1629950015,-1493312218,576839803,-1323927537,2043018684,-478928978,1895597947,-205146503" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.analysis.charfilter,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.cjk"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,-873680502,1817368346,1059037328,-1100017808,-1124500614,327727482,-1067953616" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.ckb"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,199648108,1832281327,2095958299,-1728249781,-820559641,-2104228317,-884328725" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.classic"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-728895688,-76420470,1744359200,714036933,1578056325,300892805" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.analysis.en,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.commongrams"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-813778807,-123268031,-314462225,-492298725" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.analysis.compound.hyphenation,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.util,org.xml.sax"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.compound"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="902726382,1149907213,952167078,-1066748028,944348121,432330481" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.xml.sax,org.xml.sax.helpers"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.compound.hyphenation"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1734073205,-1369643943,-2118482606,143341795,-321521887,1473379206,-1502783569,2289459,1247177870,-1177228039" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.analysis.en,org.apache.lucene.analysis.util,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.core"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1639292692,1397017430,-584211252,719433411,1733172706,-1108039480,-928084593,-1165851826,-772566564,1616618865,-1313254823,-172703607,-1827140543,-836903784,-2033390872,261886522,-382492304,-1813300457,-1704249869,1296741344,-915724515,2058623210,83342528,-1765542301,-1357236998,1355605680" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.custom"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1895597947,1725069856,-551418025" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.cz"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,1345098073,445228948,-1108462890,-708831394" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.da"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,2118582067" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.de"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,-1665762196,-402024751,-1927604999,41400641,-106592484,271141454,1913890006,-1819497489,491364891,1816467943,131075363,1133706731" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.el"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,1913368486,1912685993,-507411679,1092249249,1548213033,-1383236751" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.email"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1203143654,477714391,2145861939,233728663" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.en"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1951979919,1283232534,824004530,-1647260424,-1621847040,-902290662,1055708304,1383999603,1383999604,1383999605,1383999606,1383999607,1383999608,1383999609,1383999610,18742860,1472552222,1015287356,1632762790,-723084465,-2094684485,-1850264189" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.es"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,1921587610,82995683,-2130441817,1178341231,2141576622,-1381512324,-702863484,-1756939463,595012497,1831513561" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.et"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,1499026999" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.eu"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,-1276194285" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.fa"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,-99909562,-107561458,560709404,-1588683819,-778361995,-1840361819,-932671679,-1124548983,-201255215" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.fi"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,-772045439,-1691280356,-1151593138,-1925697578" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.fr"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,2002230400,1232861245,745046541,1755492181,-939180664,298828386,-111581718" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.ga"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,1104898651,404817236,1319492886" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.gl"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,-798160304,-1754900040,2121240626,1895380922,-1936736565,-1517232193,-777968761" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.hi"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,981983096,-396154525,-794502617,-1523603113,-615912973,1062164375,-1413281441" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.hu"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,780749413,1626001080,-1578271950,-1311710534" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.store,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.hunspell"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1252168011,-692111004,63168944,1340325369,1158408541,1830181735,1638014170,733560794,1015287356,1477447881,1997910900,1770903123,-615727305,-264312553,1322139633,1301054981,-1854452554,-466026506,-2013227622,1949378672,2135992999,-1138556123,1018720450,-446368457,-513222081,1830103134,650889447,-852708376,32006146,311505771,1013755170,-1044390071,-1358791973,2116204736,-401302027,2553090,84832468,-1928723394,-478916361,-1587419345,849410480,406849816,-228993455,-1975268591,-660072763,1433876758,-1758737274,-1103780316,966672946,2079310291,1484671662,1499679686,92505466,-1141928155,14009506,885429558,80204913,1055831160,611144591,-573197467,1895597947,-790257805,317234161" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.hy"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,-83382249" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.id"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,-2091668848,542068491,-830830721,1397062471" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.in"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-413847140,-1476603954,1151120181,-1067594498" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.it"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,-1266977626,-129906345,-1467736141,1110574203" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.lt"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,778182539" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.lv"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,-12472859,1489621280,-687705142,63168944,-2138097326" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.minhash"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-998687569,-2009898090,1732078072,-1982744590" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.analysis.en,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.util,org.apache.lucene.util.automaton,org.apache.lucene.util.fst"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.miscellaneous"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="620933992,1555820674,-610624332,653605302,1785684420,-952393050,-740738019,-1902724131,-1962908454,-1076121455,-1957919943,1803801959,625631968,2083867192,-792536949,-1203679745,-959495638,-50879616,-1346716326,-260820400,1733731142,-1255011612,-1600726164,1810736476,1483645966,1707150798,-138660004,2090257533,-1719507507,722763943,1927515747,64380091,254391247,-436491940,-1756094450,-1290993122,1161021708,-1042924457,106492777,566156641,-1453510615,-2120169311,-102923073,1640644427,-1280982197,218052944,-51787470,-1823431816,1059443365,709862053,-761616284,1739696134,649417856,-920755094,358870130,2014583194,-1897931463,1895597947,-795847969,-1080390891,1243581493,-849156518,-1241781936,875968875,1934176543,-1528093305,-2112639613,722451806,136754011,-1191133227,-1208451211,1637228916,-961346519,601126049,-314025589" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis.util,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.fst"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.morph"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-835235945,-470117654,584522761,-1145211588,1945446607,-291164696,-1562201989,-1854452554,164063471,-1391419193,-2137800559,-155782990,80988633,689175968,2145466547,812449097,-553625013,2132216117,1618518934,1847958441,297935677" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.ne"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,1501365579" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.ngram"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="924072778,-2081735255,97216495,-1505794533,-1292683603,-720914996,1390251218,-1477997608" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.nl"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,-778185138" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.no"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,-1278374636,933624105,-1634476127,-1597622807,-743263372,-1499854090,-1229613186,520102471,-628303677" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.path"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-337588857,854656387,-1479386423" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.analysis.charfilter,org.apache.lucene.util,org.apache.lucene.util.automaton"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.pattern"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1189854857,-503806808,268155570,116654584,1461802428,-1054488658,-1006755449,1391276419,1631785123,127825759,623974571,808791579,-1491167633,-417768615,-450451599" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.payloads"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="848091770,273879580,-801546418,440872768,936751710,763438622,202023472,1333219514,428657614,-1293800772,1742645583,2040649915,-1865803089,-610919589" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.pt"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,132581915,-1887562174,-355564440,574347120,-1778913715,-826369539,-1320619195,-846661674,-1541245868,1884454492,2558748,-1658322652,-1717625257,2587372,598590493" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.index"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.query"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-988245111" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.reverse"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="651375307,-1841108033" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.ro"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,773395231,688322396,2106921486,-113078466" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.ru"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,-1172179655,-1466430108,566797062,414188430" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.shingle"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1796180022,-1027810848,71858343,-186706016,322344415,1422714526,2065814668" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.sinks"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-2078044634,-1808614878,-1094296662" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.util,org.tartarus.snowball"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.snowball"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1759250374,-1371939166" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.sr"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,-2066627654,-1181784095,1068167657,1821769131" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.standard"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-783022429,-963892038,1399371504,385226234" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.sv"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,213205313,-218060708,-377339634,422448022,589193703,-277494493,-1266764309" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.util,org.apache.lucene.util.fst"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.synonym"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="857945624,307009683,-82429413,-1344668877,352673367,-2031444306,897193721,2110665611,1674154751,219533462,1895597947,-1911543745,-1655830655,1768665223" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.index,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.synonym.word2vec"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1208236302,-135194440,-2041665955,442565255,1387999363,-162876096,-1202858214,-1851872342" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.ta"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,410440297" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.te"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,1435311886,1644654605,-2075287491,333667181,1241357321,-272023359,-705921271" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.th"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1238117261,702740098,2145073339,1228232655" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.tokenattributes"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="60567813,-2004550459,1980315578,1526046970,1769410549,-1225333835,-1294891309,1314831251,500273961,-415978263,-68484069,-1871967026,788515854,1115227414,-1513660330,1896665549,-1750599283,-267275431,1594438937,1300985420,322061964,-1017399827,-482939806,1533591970" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.tr"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-840260953,-79483805,1238117261,-178785686,1999445605,225418981" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.util"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1791493896,-1722225135,1069335617,1780273295,1539639675,601809260,1476948992,1845456699,1783785177,-367220237,1985934515" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.wikipedia"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="333483072,253293738,-597474688" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.store,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.codecs"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-818386536,-952897396,2032206210,2139338221,2024963825,-143376451,-419897830,-2127840820,65282038,879728920,-593380175,-1842322206,1814121890,1768364583,920862283,-1903952580,409666291,-2086672669,-1426041610,-883161013,1687245424,431889649,1251253772,300607650,1499818479,1063826827,751920990,-2100942490,-402708492,-79250916,254548712,562095475,-1024246305,-1554018087,-509673804,26590641,409953944,-970567618,-1620748117,-1465342885,-1703572248,-808437459,-871264530,-1244429111,829300442,1163100070,1318505302,-522271512,103917221,-527984043,1193616143,-2019088968,1363708787,1697508415,-104346314,-416662684,1852913647,-275147917,-513541509,-179741881,-567932820,-24336649" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.index,org.apache.lucene.store,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.codecs.compressing"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="2111067952,-1379825743,-271784889,-795571699,-925197303,1624016101,-1285219290,2093047091" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.codecs,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.util,org.apache.lucene.util.hnsw,org.apache.lucene.util.quantization"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.codecs.hnsw"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="517278579,977588363,-1069063201,-28627041,1899321757,1594768578,1126994846,-661300082,-327500454,-300287817,-172095222,-618371211,-2019956361,-1272520605,-1967108597,51700589,1512625049,1225512842" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.codecs,org.apache.lucene.index,org.apache.lucene.util,org.apache.lucene.util.automaton"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.codecs.lucene103.blocktree"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="2116346313,1983932989,1441852670,1509294313,24306180,-1757185679,300483926,303319355,-1513798013,-1782724142,-608698182,-1601780447,-1446288043,-1415093992,80204927,2147072812,917115616,-2132393009,-1921645279,-526136831,2433570,980261277" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.codecs,org.apache.lucene.codecs.hnsw,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.hnsw,org.apache.lucene.util.quantization"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.codecs.lucene104"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="986512459,2403779,1746569187,-997493955,1942106919,-1914046565,2104378635,-466648289,-1580246937,-1424841705,-1505814705,350161782,-1521098825,1890652595,-1748836424,1309466764,-2070515073,2139338221,-911340950,-793508914,-1915109841,-65257887,2079572339,425347456,-1567038283,-1168533551,-1322581509,1704795866,-281656013" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.codecs,org.apache.lucene.codecs.compressing,org.apache.lucene.codecs.lucene90.compressing,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.store,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.codecs.lucene90"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-672923925,-1031394132,1637643715,-1993687807,-784460308,-957128122,726279495,251392840,-1790988161,208793554,836596539,663506998,1170396167,1555440902,636702055,107780663,193374840,625144588,899442278,131075281,-795414406,-1114988276,1214155086,-2003881595,-671491179,-1349333790,754122541,-1851956455,491946573,-247018051,41244853,-1769431461,-328210989,-1948092969,-2086896524,651425781,-1465450234,1217869467,1670877029,1772079120,788059827,1121859455,1277264687,2403779,-355058548,-2093006270" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.codecs,org.apache.lucene.codecs.compressing,org.apache.lucene.index,org.apache.lucene.store,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.codecs.lucene90.compressing"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1391743623,-1588448356,-1433043124,-1329767974,-1026048988,-1336237345,-995968346,-1040028540,1263346603,-840563114,-461880524,1487211483,737755572,-216297435,-587333946,-128080896,-1450708132,-802872094,-1026287708,27324336,-874469152" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.codecs,org.apache.lucene.index,org.apache.lucene.store"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.codecs.lucene94"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1680112641" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.codecs.hnsw,org.apache.lucene.codecs.lucene90,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.packed"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.codecs.lucene95"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-2070708742,-65257887,2079572339,425347456,-769459352,-871149018,10432860" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.codecs,org.apache.lucene.codecs.hnsw,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.hnsw,org.apache.lucene.util.quantization"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.codecs.lucene99"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1670485868,-1748836424,2004285496,-877864660,-1026287708,-2135276568,-1089477477,-1188884503,-755677849,2139338221,-600272617,94668140,-1879251066,-1549378882,796618635,1512625049,937071848,312696982" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.codecs,org.apache.lucene.index,org.apache.lucene.search"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.codecs.perfield"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1399148690,54880508,210285740,1534276948,2077484213,-264983015,-725999005,1834042147,-1600133866,1895597947,-1393460442,-71068635" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.collation.tokenattributes,org.apache.lucene.document,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.collation"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1957189545,-308516759,693861628" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis.tokenattributes,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.collation.tokenattributes"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="298850386" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.geo,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.document"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="148974526,-1421041887,141253103,-814238146,1120022876,-1108522775,393434316,1744807597,680785310,926364987,-1290120718,-1364843791,26711945,36129823,37564364,1557303180,658083160,-1668089271,-427052092,889697486,1189177891,-627294659,493854492,220765674,94652518,1350104004,1360620434,-481089460,1916038086,1706809336,80218305,-1541776920,67875034,-1025788108,-109736452,953189406,962607284,964041825,615732065,-283487955,930472144,931906685,606149227,615567105,617001646,-1690018066,1705729210,-2133454422,-1448791887,-1174952828,1192119014,674301035,-962274036,-951757606,2042148772,1859869039,-1568387947,1806787019,1542049935,1017681796,1770540728,2044703157,75468501,1719403350,709348933,707986869,718503299,483409939,-1041834770,1869985987,2108667838,2118085716,2119520257,-694178047,-1593398067,2096514,-1961065867,-1464342628,-1338580400,852543824,-1460042515,-250912561,197105666,1220622571,57285884,2033193,-2137403731,-1851112221,-1538335945,1450638048,-1695706989,161342969,-482632063,2590522,1604729918,2042322628,1562406440,-1592927751,444935389,-343776720,-122831339,81527952,1673434181,-1139371744,507466922,-207049203,314858529,1793923912,-1472000278,-989044156,283443959,2622298,297988974,134110025,942981037,1835477505,338294458,-633876454,695807787,250823490,273324973,-876212960,-787866822,-1089238560,-1078722130,172052360" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.document,org.apache.lucene.index,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.document.column"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-288204073,-1485418376,515533696,-1077596984,2023997302,805790052,456523659,-1800049,-903861332,1736647713,864064786,1477979613,-1167096574,-62177324,-769480609,836714040,-696654948,107581295,220051097" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.index"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.geo"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="2018617584,-343768131,1419239671,-8314173,-1433717950,1507472295,681934831,-1789563365,1595577115,1740818056,1921065250,2228070,-3514515,-1676601164,1888935936,1910664338,822312414,2368532,-2018806426,77292912,1264046018,1267133722,-2055203604,-1169699505,1200208865,180600754,364690011,-935110318,-1393994438,2433570,80204913,1562406440,506058154,-1849446607,1998724509,-152312173,-1691040107,-878767345,1616228089,-697461906" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.codecs,org.apache.lucene.document,org.apache.lucene.document.column,org.apache.lucene.search,org.apache.lucene.search.similarities,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.automaton"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.index"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1696423737,1920675384,-1175891207,-1659593929,1943470425,1247177870,-614940055,1005720160,-61174150,-380756107,-607491284,-1772848116,-14223019,1149300507,-138959602,1829680843,-1562177097,-366993838,687935806,528051755,1067174022,-895347027,1061542285,427877270,1113038501,-928293809,-597046060,73313124,415178366,808187116,-33084742,-864259256,-123870846,1865572254,1205597909,-1642791501,856636944,2079418825,-923672776,-1029178943,443325623,-1808614382,-452102670,1454642378,-789048231,-36033014,1895597947,-1179541435,-812856304,-1130223563,1878080578,1825604890,356743914,634770800,-711625010,1899156048,83488,76926285,2049139802,-7643440,1772858346,-857418008,522354107,645044787,-966401660,921545396,-666763390,-1875782858,861822403,921094509,-952208919,2052607076,2054336811,534725255,1028551986,2433570,1765012531,196916938,-1078852401,-1117408082,675451899,29012612,1170728720,39945208,-226410704,1784688796,-410743080,-1999732120,1521903743,356038939,355835173,-346757111,1026700318,-816038393,91597974,-2126874598,1248301992,-1676286769,571076208,56261704,-2020393256,-1026126680,1198785607,-1708545008,-141602387,-1853500464,1422853087,-1745155893,1601500449,-196472076,1167400616,2094424886,-1522969872,2104126169,50341569,740044225,1522923342,1954009104,-1258358056,1915097201,-124912182,767336655,-906843536,1128553337,-996021038,-666356827,-128126075,2094450306,1417242445,2130435898,2002134705,55326881,781890492,1062019382,-1503116133,1849605407,1102603221,-1868160732,-1597376443,1819056828,-1408023712,892200566,-647110250,273951363,495335972,-1256765769,-182616571,2099522996,15559800,-1848656267,-1626644469,-704707635,-198222226,-1111258552,-1746435959,-1484208142,-1129181575,259676921,1318882970,1380032378,1254146771,-1955105266,-504817268,1897146800,-368864355,-1797150112,-1326600171,-894120998,1175388778,170039884,-752372469,1482574524,-1983989746,1206185500,-137784281,1988872058,1322308743,-1051150050,742705966,240558684,-1288213987,-1261800280,685026228,-1372005361,895170151,67338874,-1330044233,-993097113,-1891041938,-1993748645,-1171194939,-440204499,1075364711,-1505714775,440324942,1829797800,2010924827,280205741,466062845,1711428273,-1686299191,-1074133634,-535638744,161877808,-1828124435,109396449,-1625826162,1492768731,-1279101963,-173432611,-1260453002,-462061202,-90240570,41278081,-952911070,882117887,2095461761,481817309,-181899912,380423799,-1891477737,-175844594,1817544443,657204171,2049997202,-180782150,-102896161,1769853802,-1163372176,1856018003,761153411,2052319524,891285337,-1630998912,796477887,320336868,-66480498,1416440673,1025136946,-2126739129,-1796771352,362957564,1970559930,1419572299,1589572043,1364865852,1941986906,1403252036,-1062487058,1039646053,-746431932,-879682033,-1676191007,1802535657,-571280476,-107369864,-1385935,-2108904435,-1243764346,-1732247779,171623180,333108244,-1145482895,-1816510752,-1330275780,166946244,-1223870135,1770888101,1891986763,879765763,854885312,1174048584,-1441650559,-1720819023,-1767278937,1580286235,-110331281,-726461138,-489791972,1992301234,-1002291116,734485957,-282138062,2024986906,-197917694,293875609,1315148121,-1666339510,1584574736,2005739423,2051055215,2005892997,392170126,713529091,192685560,828046942,849834663,-1782575271,714624609,-334782027,678526514,-1993748646,684490254,-333960147,-2038135659,684184571,-319867192,-191323722,-1472452763,1787297431,-883187771,529818631,2107497376,-1531750763,-76613408,375822811,1553746822,1511049946,493082158,867110989,393320162,-1554018087,577333973,-251875227,-344264413,1362892519,-633179986,92342962,1054105056,1581748653,684097045,1235929508,307699971,-132319241,693136526,670764801,-872655062,-2127840820,841448429,1765002781,-154330741,-239641794,-559223751,1403229424,-47623958,-721163095,1395089118,-2085266610,-1572009475,-1891539531,-1397453581,-737822476,-802528534,538591769,831986312,1906701156,-1469270537,-1812726037,-1100073846,2024963825,-143376451,853090259,-1958542882,15857738,-1898797362,671826484,-385179531,1511810841,-1588757546,1685628310,-1296964614,1349950707,-955632375,-1893608073,196828252,-482727822,543237212,-1533621528,2603148,-275147931,201960925,60348846,-189222556,-633997958,-3574684,399862135,80697703,1595124906,-246982904,1251346090,-246906091,583548440,-1091260399,1937386514,-576429311,890792282,-197228450,-1988523351,-148442265,1183932614,-1200358726,64177779,-370185346,-2044898956,-944616490,-1457204578,-1052298373" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.internal.hppc"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-7643440,1155310364,1794131663,-1898375572,917115616,850436126,-136588789,1703076045,1527823010,-1033753249,-777219120,-368754343,753659559,1236675807,-161385541,-590310222,1463170016,-4973688,1536346117,-316092426,-1638399794,1037749635,1675998433,-47373915,1009231218,952566038,-964693074,-47530463,-1902913533,1650863332,-792313440,-1958881445,869782802,233103510,-1793194962,763999800,-1001341719,-1406291397,-1818330063,-963126285,-1649058022,-2089200985,-1574351979" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.index,org.apache.lucene.store"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.internal.tests"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="25651998,1710517588,1637291088,-1771621960,1006695817,-32070982,-1049519439" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.codecs.hnsw,org.apache.lucene.index,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.hnsw"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.internal.vectorization"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-336544842,-1392062005,2113020597,150972425,1381518129,-1157716779,-681217716,882330265,-1505744058,-1776003970,245996445,1224868155,633009669,-793878670,1479350954,-998435319,938275879,-1224548857,-952888081,2088403380,-1199959077,2433570,-1823899584,1866085303,1866305286,321974514,1469425801,726816986,2024194329,-1879251066,907428297,-1564398645,1364306429,1752517357,1295342644,448363540,-2107813972,787836030,-964389750,1087532421,601738994,-226044518,1699989007,-1059835894,-2127840820,2092362418" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.index,org.apache.lucene.search.knn,org.apache.lucene.search.similarities,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.automaton,org.apache.lucene.util.hnsw"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.search"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1968681761,1805830852,987912222,-1837779778,-1048320580,-808110406,1233889025,-119359066,1727732024,119443050,-163740590,843573440,-1680915159,-1206927392,766010243,1514870744,-568508022,-1842766326,1520031196,204143940,320318364,1390738212,-922850799,1862945499,-2054036898,1895597947,655557354,-1205090963,-993618676,-832995887,1670229407,76006348,-2136516713,-887002720,2000631306,1444561837,1972556605,-1686348216,-734792652,1180619712,-1570173792,138533465,80600089,-582439163,1085872114,-777907302,-786717493,636107631,-942290209,1994669089,-658690528,854988514,-1498152018,-164940034,1838039681,1419260366,-407507859,1474975360,1011096917,1127271341,1760259957,-938535693,-969057496,947543164,246749939,34367825,2001489119,-877932938,1082405787,331102112,1961327286,144929850,-109157066,238790382,2072721114,354964806,-1832964237,-1860093600,-1219870120,448507273,1417456594,991481504,991481532,158386074,-328956505,1050896543,-891567848,228820404,-1083060902,-1979668058,-1199235326,-1156966714,1860848303,-1808561022,164802217,-444850727,1945485614,353080405,885444367,-2114678705,1964911546,1591786653,-1402101325,247083874,660695568,14858000,1958033964,1990539245,1006276408,-2120690476,-635026274,1891992657,-1092139375,-766244996,430162771,1278965875,133244353,-87580892,609865727,-444594487,-1587044905,-465521142,2145761558,532743202,-1433132282,925067886,1583050913,-130051410,662655439,239396762,562001401,-315128593,-994708053,-60223152,-1350555253,-864389634,630413458,67115090,-1756119655,1859569617,-1424949483,-1067368491,-1260633035,-1574943209,-80089079,-1689186363,-2012928552,-1896754128,872525012,-1961661690,533289951,-951888080,-93795179,428463358,-110255700,1632616940,304287506,-869603234,-1268695714,-1880034252,-198288664,423152131,350721532,-1103710028,-1691684943,1959421178,-1796771033,-2087741158,2059589670,-278053742,-353756921,675018629,-566737529,-348061887,-231887463,184304908,950919218,-545342986,-1164436398,-1762961381,445958530,1202635444,1904482042,547256204,-1118819676,-2131768427,552927369,2067108970,-250754483,-1289175137,2140989103,151507474,-948491760,-413899228,-295514212,-530073652,1395089118,-1813523363,-1579287926,539447183,75233834,-1924585282,390435993,790433009,-1901993049,-1789452013,1813039777,-1639599266,577978303,862068351,-1567929352,-1100635616,1184043124,-1423750410,34460214,-1040206988,-359994983,893762649,2054710847,-710406117,-1935336688,-1430105226,-1769235737,-356990367,192913078,1620830195,28864495,1558652815,-909660509,833241614,-1037186392,-1942252609,718476457,2112108682,1700055343,1851374554,1423952248,80204927,-1786099054,-301601647,-2123558069,-1296801767,406603153,804196894,-1668579985,-1668579912,-145439655,-29265231,-1366378250,-1216905914,-1808122976,1396542299,-1488166117,-1833516857,-1228674762,1361007047,78391464,1798881210,1191825929,-2050534181,2074547878,107246710,1697998991,-695340542,-988318786,1162933535,938042732,-1872782662,120597622,-872023728,-287681485,2128787753,-420974547,-813696890,-306003383,-420884122,-162237643,-1823899584,597401132,439862462,-700988318,1310663872,-1269475813,1936531421,-1055539499,1115113406,-1895759320,-1031052029,1965093487,871603576,-247640466,-1225824912,-606389589,-506644502,251453961,-892847397,-1426696898,-298083329,74115493,-440951491,164139862,2582974,2622298,1968614876,-195878927,463871629,-1312325025,1881315695,-128148884,-1748017342,770753300,-1918943420,-1972064457,-1454186256,-1650557449,-977943589,-861769165,-135194440,-2111076947,2599333,606769560,-2065231519,-857893688,-645768093,-1094603913,1816619157,161238564,-276961380,315654967,45064140,2049050319,-1359897905,220404550,1955284950,1204028151,897027291,-934499379,77595829,-679157771,524303632,-1258200739,1422899071,-767682779,47459850,1515526472,365104453,-1201042272,-552539337,794293554,-1883843045,-162038274,1104838618,-168296467,1558786847,-1034726656,-489791972,1426328708,-159661076,1377736765,9481057,2082098,667121507,-199604601,937532323,-245200320,-951119661,181943949,-1707725160,1680849646" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.search.comparators"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1532380660,-1983989746,-1306745563,-1425205337,-51638224,-322322382,1308311683,231477765,308080784,-210120558,-1844295759,56087805,-1401944287,-1049912204,1098438563,344377186,1184391823,1035692036,-1862876580,1205256387,80204913,-1720425321,937881120,4265506,-1952517024" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.util.hnsw"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.search.knn"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1199470645,2254346,1300486161,-1822363920,-635954842,-1252908263,-1451032458" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.index,org.apache.lucene.search"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.search.similarities"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1480556141,-1347399819,-1347399809,-856470307,-2142439755,-2142433316,-2142409964,-2142403525,-2142380173,-2142373734,1685263758,-72773295,852721595,664565740,-873298408,-873298368,-1302445531,858409265,-1570173792,-2029261557,1492434165,-1717617078,-710310125,-1416387932,355832612,-1854083989,1134923996,710658620,1136241919,-1251073863,1721019945,-1466312171,-368664569,1805663964,-1452710988,46696203,52425418,1015452574,-1064423612,-2026225689,-1582699863,-1819039617,-1591351618,502688988,741081404,-601410179,1865405222,1865405223,1865405224,-1463846275,1332444083,672393981,-1274932539,-1703976380,-958652489,-1358474493,1622207337,1701811316,-1867457447,-1295975780" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.store"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="111206635,-371228036,1099843170,1386021402,-1072899862,1613811831,-1237094609,483126844,-2041401195,1421284327,1319426454,663506998,1674845378,882622051,1769833864,232304347,2020622709,1620103712,-1138038421,-1271450456,1041382989,1663423846,678087712,-1176372654,684969741,1668596829,-1780406627,381522357,-555685936,131959227,1426592178,-1678783089,-1608731219,-235909719,-1574842824,-1397133229,142195094,2373963,58037567,-529019742,721386678,-57129967,-403219068,-610756089,964851800,-1766643362,-146290028,-1718850278,-77591957,-1460853110,1246324379,-664289050,1717754553,1563237804,359752862,2035128443,-2132145521,2021822331,-1957008724,90719422,750305324,-856557864,1306948018,1268098654,1026046992,-72094749,1841083289,1096710006,-643429240,963286606,666657918,1921741991,-1617359894,355164608,637527016,-568381438,-1715822051,1553109597,-1359051438,675320054" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.store"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1760565017,1257059436,-1169934598,1123327070,971897674,-1525011001,579084763,2017053308,-1327855857,-1548002098,-1505461522,-650444100,1245940292,80204913,-2018225737,-119630084,1990032437,-1411193917,1561537167,589354210,-1131273108,2070822,-1937049109,-1812829182,1955734539,-1530242559,-1802074040,-1289794649,1980944755,1793386225,-1738855711,2127666739,-187173058,50148802,-399082855,1986378351,-634693258,-148624170,-60959262,1501094806,-1992388827,-1470944282,1604631710,-634071825,1414243513,-426680731,-690987040,-542475679,1581691183,916984113,2059748680,-1672483364,1895597947,-226903706,44358668,2000715872,614706318,-1089955076,-1634616827,-1695516276,-1286563269,-689409956,822122219,-21033946,872525012,-2061523831,-1544042886,-1002382889,-1578048067,-2099929671,-1734552829,1950485874,1672040122,-1457207784,69050382,1276275516,-1069982946,-1621509533,180740370,-1587945685,-537536633,1713860865,602235458,1176420846,-1684876185,1787449561,-2002445510,647217739,1641385015,-671864977,-687803092,-926986133,-2060762796,1481856359,830099921,-2010132824,1395089118,-2008869956,1728645875,-1506489564,365628234,-130051410,1039646053,-191746086,-773318803,1905678291,-923399738,606147847,-1387290942,-1988937276,-395271039,-499233299,-343828067,-1021141830,317120038,204157642,1726165900,470762097,-219281810,-1669087990,-23766079,-1851112221,-573618730,-1839006181,1627473325,-135194440,1838731731,1991333859,1881695849,976101501,424024502,586281277,-1247745567,-347691779,-1632452720,1247177870,1205840684,-840078996,1776219363,335868927,-836037947,1569735186,1256216575,-773544105,-795866523,-1034806157,-645470749,-1242087605,-1094810187,-2031624743,-1812726037,719119945,1622371239,1855930627,-1424095474,-1742608073,1157629917,-83779777,-936248542,240558684,268308644,666930894,-317604253,-2070011529,1540033891,-1579441787,299142930,64213087,1715904807,2011940869,2016261304,1088706476,370104949,-222691066" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util.automaton"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1504106832,1895597947,-617327920,-1822757663,1756426733,-1049205659,1489129169,143142478,378617673,385300799,1298878439,-8186815,913951955,-2099913197,-808548648,1712286508,1448362359,-1337916307,845475884,1023893089,61617927,2026987181,150192334,-619611331,35109422,1289071539,1997648908,2338740,2125317926,-1850962679,1445959877,-82048277,1382829617,80204913,-1323246861,-1027162172,269306229,2112185052,1408732217,-128015758,-1087536558" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.codecs,org.apache.lucene.index,org.apache.lucene.store,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util.bkd"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="778629181,1615059021,-260162904,1392648819,-1442604421,1198441918,2093704870,658333629,-2137596108,118251162,-591066782,1817544443,-1954643026,1353847150,1284737811,-1884023609,1882473709,-1728618377,1413039014,2107158500,786237616,941642848,1881134675,-1044110879,2036539907" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.store"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util.compress"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1424005322,-1992088768,255790460,80563118,111746643,111746701,75878,23176454" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.store,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util.fst"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1077059965,-852437843,-1368257975,1248363851,388777344,-432459205,1161515745,66098,1503424750,2043992438,1901337263,69927,1895597947,307868243,-953809157,2433570,897666819,-1924501620,1894468326,156708552,636329162,400661801,-1709765361,549141698,1868274809,1489430129,-1098452272,1187346000,966051029,-1475735163,558538610,2479866,1257102136,-1631003748,74464756,1390319852,1633535500,157023724,-1850559427,1983939642,1530994990,-1997753087,2647074" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.index,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util.graph"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-2113219034,244164552" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.codecs,org.apache.lucene.index,org.apache.lucene.internal.hppc,org.apache.lucene.search,org.apache.lucene.search.knn,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util.hnsw"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1742569001,1514321299,402104420,952936187,-149222553,435495042,-107743672,932278646,759636529,-35650689,364193933,1956520516,-2030956410,1996146721,-505826944,1901489695,-392453788,651035791,-449884777,-961030722,-654500690,1257769433,-1120892331,604060893,-1120619220,-1010435183,-1760163132,1027257419,-766126115,1560358508,-964559257,76453678,-949705441,1524416884,425154873,-2088932087,-1974037624,842140614,513491890,-862660375,1051264547,318282763,675372745" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util.mutable"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="46204427,260618133,260664409,1403353532,-507167983,2086623716,260916007,2086633510" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.document.column,org.apache.lucene.store,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util.packed"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-972355562,926043923,909953270,2027982872,-944576427,2120207661,1301928100,1705065484,1705065485,1705065486,1705065487,1705065488,1705065489,1705065490,1705065491,1705065492,1705065493,1301928101,1705065515,1705065516,1705065517,1705065518,1705065519,1301928102,1301928103,1301928104,1301928105,1301928106,1301928107,1301928108,-1233286728,1895597947,984110350,2394661,1755675332,1911080564,499848105,431123972,479941293,1993278245,1993278249,479941294,1993278274,1993278278,1993278282,1993278307,479941296,1993278336,1993278344,1993278373,1993278402,479941300,448979500,604384732,100259552,349907230,505312462,-1055540504,815626582,-1823775710,-702472114,-702472112,-702472108,-1823775709,-702472082,-1823775708,-702472050,-1823775707,-1823775706,-1823775705,-1823775704,-1823775703,-1823775702,-1028662801,-1459501944,-2116533245,-1087880156,57285884,2110055447,1320717158,-1216934138,-137432506,-411998902,-1851112221,2005528995,942349937,-674802639,-1695706989,2133722908,1247177870,416594294,1543073033,-2082474197,1394175413,-433828399" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.codecs.lucene95,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.util.hnsw"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util.quantization"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1397127919,1425480951,1048622430,1875176142,847630719,-212765504,454703616,1634556865,-1879251066,-1549378882,-334165031,-2116487859,262508091,-408447800,1268777081,722973823,2113020597" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.tartarus.snowball"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="63386268,1842973186,258714095" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.tartarus.snowball"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.core"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.tartarus.snowball.ext"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-643494907,-339269408,-793389212,903662659,840140356,1162338249,951740929,127418048,-777126346,-687633577,1133706731,-1383236751,-1413281441,-1281225518,1397062471,1915819548,730928753,-865666324,-2089263828,176371779,-1850264189,1884454492,519652568,-1482770562,-1234529059,1803617021,1055771254,-1985907634,-1173630931,2000978883" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.apache.lucene.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.apache.lucene.core"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="11098538" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.apache.lucene.core/org.apache.lucene.core-10.5.0.jar"/>
+      <attribute name="osgi.content" value="DF388F541DA06C1CA42E3ABBEBE067F13223D0FE6312AB6238D5902127752DE6"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.sun.management)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="com.sun.management"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.foreign)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="java.lang.foreign"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=jdk.incubator.vector)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="jdk.incubator.vector"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.io)"/>
+      <attribute name="osgi.wiring.package" value="java.io"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
+      <attribute name="osgi.wiring.package" value="java.lang"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.annotation)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.annotation"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.invoke)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.invoke"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.management)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.management"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.ref)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.ref"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.reflect)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.reflect"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.runtime)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.runtime"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.math)"/>
+      <attribute name="osgi.wiring.package" value="java.math"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.net)"/>
+      <attribute name="osgi.wiring.package" value="java.net"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.nio)"/>
+      <attribute name="osgi.wiring.package" value="java.nio"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.nio.channels)"/>
+      <attribute name="osgi.wiring.package" value="java.nio.channels"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.nio.charset)"/>
+      <attribute name="osgi.wiring.package" value="java.nio.charset"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.nio.file)"/>
+      <attribute name="osgi.wiring.package" value="java.nio.file"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.nio.file.attribute)"/>
+      <attribute name="osgi.wiring.package" value="java.nio.file.attribute"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.security)"/>
+      <attribute name="osgi.wiring.package" value="java.security"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.text)"/>
+      <attribute name="osgi.wiring.package" value="java.text"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.time)"/>
+      <attribute name="osgi.wiring.package" value="java.time"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util)"/>
+      <attribute name="osgi.wiring.package" value="java.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.concurrent)"/>
+      <attribute name="osgi.wiring.package" value="java.util.concurrent"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.concurrent.atomic)"/>
+      <attribute name="osgi.wiring.package" value="java.util.concurrent.atomic"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.concurrent.locks)"/>
+      <attribute name="osgi.wiring.package" value="java.util.concurrent.locks"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.function)"/>
+      <attribute name="osgi.wiring.package" value="java.util.function"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.jar)"/>
+      <attribute name="osgi.wiring.package" value="java.util.jar"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.logging)"/>
+      <attribute name="osgi.wiring.package" value="java.util.logging"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.regex)"/>
+      <attribute name="osgi.wiring.package" value="java.util.regex"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.stream)"/>
+      <attribute name="osgi.wiring.package" value="java.util.stream"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.zip)"/>
+      <attribute name="osgi.wiring.package" value="java.util.zip"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.parsers)"/>
+      <attribute name="osgi.wiring.package" value="javax.xml.parsers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax)"/>
+      <attribute name="osgi.wiring.package" value="org.xml.sax"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax.helpers)"/>
+      <attribute name="osgi.wiring.package" value="org.xml.sax.helpers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.misc)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="sun.misc"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=21))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Eclipse Public License 2.0"/>
+      <attribute name="copyright" value="Data In Motion Consulting GmbH - All rights reserved"/>
+      <attribute name="osgi.identity" value="org.apache.lucene.benchmark"/>
+      <attribute name="documentation" value="https://github.com/geckoprojects-org/org.gecko.libraries"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.benchmark"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.benchmark"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1581691183" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.benchmark.byTask.feeds,org.apache.lucene.benchmark.byTask.stats,org.apache.lucene.benchmark.byTask.tasks,org.apache.lucene.benchmark.byTask.utils,org.apache.lucene.facet.taxonomy,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.store"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.benchmark"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.benchmark.byTask"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1622859555,305612172" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.benchmark.byTask.utils,org.apache.lucene.document,org.apache.lucene.facet,org.apache.lucene.queryparser.classic,org.apache.lucene.search,org.apache.lucene.spatial,org.apache.lucene.spatial.prefix,org.apache.lucene.spatial.query,org.apache.lucene.spatial.serialized,org.locationtech.spatial4j.context,org.locationtech.spatial4j.shape,org.xml.sax"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.benchmark"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.benchmark.byTask.feeds"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1484312002,1559971298,468105684,-1911543745,-894925331,593646515,1148791030,1247177870,1986528903,-802872094,1857433840,895170137,1782929819,889072140,939100795,-280882891,619875474,1699429171,908905290,-599753814,-1025990011,1631782848,1703275859,-457347931,-942710337,1189058107,-96625291,856414863,1808124028,-67215409,1316901472,336321392,-352499762,-728820726,35959787,692424915,-233559265,852376304,-505039620,-756137064,1250236594,1453592347,1246438241,-1466034014,-591377847,-1081911425,-173457388,-1742227465" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.benchmark"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.benchmark.byTask.programmatic"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1825807926" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.benchmark.byTask.tasks,org.apache.lucene.benchmark.byTask.utils"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.benchmark"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.benchmark.byTask.stats"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1898886909,-1850654380,-2121176582" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.benchmark.byTask,org.apache.lucene.benchmark.byTask.feeds,org.apache.lucene.benchmark.byTask.stats,org.apache.lucene.benchmark.byTask.utils,org.apache.lucene.document,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.store"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.benchmark"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.benchmark.byTask.tasks"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1434650396,544382024,1476161380,919665296,1947608329,-190315753,-1654694273,-479968032,-645140946,751414033,1382626784,482137231,-2049148643,1025289147,-1045020822,1308552947,1751640914,579346203,1766029547,681342930,482447316,-1340200801,463700627,-180308435,-2018647310,-928401444,560273187,494986286,-1164477611,-802902949,-1231186721,72044693,2008093669,1575201673,-382755720,-896708509,1144318805,2005087179,-1985444115,-370138887,1423952285,24105645,406350637,95812307,1282987885,1471096547,2133769540,362682981,954066529,-605243082,1137820787,-1655613966,2071447595,-1853179584,-501117020,1265879313,-1631442454,-1621045172,-1548243170,-86699898,1130929588,309976250,561173962,-416332623,1411638026" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.benchmark.byTask,org.apache.lucene.benchmark.byTask.tasks"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.benchmark"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.benchmark.byTask.utils"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-2065509297,723242340,2024042338,2110055447,2622298,-1008850703" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.benchmark.quality.utils,org.apache.lucene.queryparser.classic,org.apache.lucene.search"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.benchmark"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.benchmark.quality"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="71925495,1513640670,-12418263,-586946392,-754214689,-10604800" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.benchmark.quality"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.benchmark"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.benchmark.quality.trec"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-24736016,-720253316,1891141453,1959333051,-1483721501" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.benchmark.quality,org.apache.lucene.index,org.apache.lucene.queryparser.classic,org.apache.lucene.search"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.benchmark"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.benchmark.quality.utils"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-23311967,-1793339858,-1738159544,1500516493,813385265,657266624" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.benchmark.byTask.feeds"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.benchmark"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.benchmark.utils"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="2120834390" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.apache.lucene.benchmark"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.apache.lucene.benchmark"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="538235" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.apache.lucene.benchmark/org.apache.lucene.benchmark-10.5.0.jar"/>
+      <attribute name="osgi.content" value="9CB13D80AE09B183B106B6AC94C2DB6F358EC307DCFD522C9CCEEC60FF47892B"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.cyberneko.html.parsers)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.cyberneko.html.parsers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.ibm.icu.text)"/>
+      <attribute name="osgi.wiring.package" value="com.ibm.icu.text"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.io)"/>
+      <attribute name="osgi.wiring.package" value="java.io"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
+      <attribute name="osgi.wiring.package" value="java.lang"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.invoke)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.invoke"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.reflect)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.reflect"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.nio.charset)"/>
+      <attribute name="osgi.wiring.package" value="java.nio.charset"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.nio.file)"/>
+      <attribute name="osgi.wiring.package" value="java.nio.file"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.nio.file.attribute)"/>
+      <attribute name="osgi.wiring.package" value="java.nio.file.attribute"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.text)"/>
+      <attribute name="osgi.wiring.package" value="java.text"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util)"/>
+      <attribute name="osgi.wiring.package" value="java.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.concurrent.atomic)"/>
+      <attribute name="osgi.wiring.package" value="java.util.concurrent.atomic"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.function)"/>
+      <attribute name="osgi.wiring.package" value="java.util.function"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.regex)"/>
+      <attribute name="osgi.wiring.package" value="java.util.regex"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.parsers)"/>
+      <attribute name="osgi.wiring.package" value="javax.xml.parsers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.commons.compress.compressors)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.commons.compress.compressors"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis.standard)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.standard"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis.tokenattributes)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.tokenattributes"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis.util)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.codecs)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.codecs"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.document)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.document"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.facet)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.facet"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.facet.taxonomy)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.facet.taxonomy"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.facet.taxonomy.directory)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.facet.taxonomy.directory"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.index)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.index"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.internal.hppc)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.internal.hppc"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.queries.function)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queries.function"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.queries.spans)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queries.spans"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.queryparser.classic)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.classic"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.search)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.search"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.search.highlight)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.search.highlight"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.search.uhighlight)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.search.uhighlight"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.search.vectorhighlight)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.search.vectorhighlight"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.spatial)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.spatial"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.spatial.composite)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.spatial.composite"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.spatial.prefix)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.spatial.prefix"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.spatial.prefix.tree)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.spatial.prefix.tree"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.spatial.query)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.spatial.query"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.spatial.serialized)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.spatial.serialized"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.store)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.store"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.util)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.locationtech.spatial4j.context)"/>
+      <attribute name="osgi.wiring.package" value="org.locationtech.spatial4j.context"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.locationtech.spatial4j.shape)"/>
+      <attribute name="osgi.wiring.package" value="org.locationtech.spatial4j.shape"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax)"/>
+      <attribute name="osgi.wiring.package" value="org.xml.sax"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax.helpers)"/>
+      <attribute name="osgi.wiring.package" value="org.xml.sax.helpers"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=21))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Eclipse Public License 2.0"/>
+      <attribute name="copyright" value="Data In Motion Consulting GmbH - All rights reserved"/>
+      <attribute name="osgi.identity" value="org.apache.lucene.analysis.phonetic"/>
+      <attribute name="documentation" value="https://github.com/geckoprojects-org/org.gecko.libraries"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.commons.codec,org.apache.commons.codec.language.bm,org.apache.lucene.analysis,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.analysis.phonetic"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.phonetic"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="676057231,448137595,487665324,-1588789058,-662872272,1021703098,-391962600,-1361519150" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.apache.lucene.analysis.phonetic"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.apache.lucene.analysis.phonetic"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="63274" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.apache.lucene.analysis.phonetic/org.apache.lucene.analysis.phonetic-10.5.0.jar"/>
+      <attribute name="osgi.content" value="9A898CF34EC449C05905303446057C0D839B546DF54ACC5760FDF466BB455731"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.io)"/>
+      <attribute name="osgi.wiring.package" value="java.io"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
+      <attribute name="osgi.wiring.package" value="java.lang"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.invoke)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.invoke"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.reflect)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.reflect"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util)"/>
+      <attribute name="osgi.wiring.package" value="java.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.regex)"/>
+      <attribute name="osgi.wiring.package" value="java.util.regex"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.codec)(version&gt;=1.19.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.commons.codec"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.codec.language)(version&gt;=1.19.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.commons.codec.language"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.codec.language.bm)(version&gt;=1.19.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.commons.codec.language.bm"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis.tokenattributes)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.tokenattributes"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.util)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=21))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Eclipse Public License 2.0"/>
+      <attribute name="copyright" value="Data In Motion Consulting GmbH - All rights reserved"/>
+      <attribute name="osgi.identity" value="org.apache.lucene.facet"/>
+      <attribute name="documentation" value="https://github.com/geckoprojects-org/org.gecko.libraries"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.document,org.apache.lucene.facet.sortedset,org.apache.lucene.facet.taxonomy,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.facet"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.facet"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="13443915,833473173,-67427556,1256421971,-1850559427,-2039705962,-237025326,-1459548311,79711858,1283081814,-412361649,-823488093,-812971663,581954708,-809303718,2096672188,1782468600,-1994460623,-473357063,114143955,-324531140,-63664694,1519907834,-893722594,1900188878,67115090,222661222,-1144291316,1592250669,-465521142,-1461497793,-996690278,-1544840377,1048191818,1017682965,-1038714697,-1713285335,-2071866643,-1444534350,-435540951,-497488088,-2074988793,2058464901,-268971525,1875808422,473321280,578490553,1447439437,1890254779,75803005" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.document,org.apache.lucene.facet,org.apache.lucene.search,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.facet"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.facet.facetset"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="149929397,-1661621700,-131674456,562283339,1751860857,1050288999,1512169298,-431425145,-1119116262,-1736334873,67115090,260993071,1200872618" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.facet,org.apache.lucene.search"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.facet"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.facet.range"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="401008245,-2058988708,37564364,-298570129,-337770964,-261856780,714940216,-337407616,1193759838,-698684103,2119520257,-1651659055,172083899,1066355482,-1285518941,1500342996,78727453,67115090,1671153790" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.document,org.apache.lucene.facet,org.apache.lucene.search"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.facet"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.facet.rangeonrange"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="37564364,-1370273463,2119520257,887727678,78727453,67115090,842797146" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.document,org.apache.lucene.facet,org.apache.lucene.index,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.facet"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.facet.sortedset"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1703530505,153621993,-786275430,-1009160769,674547772,466771567,-105294265,-344981992,-1633919770,-2128340712,-964919258,1280910076,255560857" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.document,org.apache.lucene.facet,org.apache.lucene.facet.taxonomy.directory,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.store,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.facet"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.facet.taxonomy"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1725135545,-311439164,-818188387,992806830,-1991402488,113178640,-197474903,-1614153643,-678047203,1162475004,239651551,-904632729,-718345506,601811914,1491109362,-796670399,-328271213,-1591158297,-1382893464,339318779,227068608,1769180261,-371119766,-353998388,153621993,-786275430,-1598018451,382925226,2105712557,-1250835564,-1095430332" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.document,org.apache.lucene.facet.taxonomy,org.apache.lucene.facet.taxonomy.writercache,org.apache.lucene.index,org.apache.lucene.store,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.facet"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.facet.taxonomy.directory"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="2024055184,381581089,-204429624,547938604,1891986763,536986321,399433802,1105747830,-437569413" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.facet.taxonomy"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.facet"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.facet.taxonomy.writercache"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="64279661,-62450206,-116190462,1159514985,-1546957137,564288963,311377457,990091934" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.apache.lucene.facet"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.apache.lucene.facet"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="581505" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.apache.lucene.facet/org.apache.lucene.facet-10.5.0.jar"/>
+      <attribute name="osgi.content" value="DA03B927FDC1CCBAFBDAE3AD7545C00239458C3700D81F0075F11B6382B91774"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.io)"/>
+      <attribute name="osgi.wiring.package" value="java.io"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
+      <attribute name="osgi.wiring.package" value="java.lang"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.invoke)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.invoke"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.runtime)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.runtime"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.nio.file)"/>
+      <attribute name="osgi.wiring.package" value="java.nio.file"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util)"/>
+      <attribute name="osgi.wiring.package" value="java.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.concurrent)"/>
+      <attribute name="osgi.wiring.package" value="java.util.concurrent"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.concurrent.atomic)"/>
+      <attribute name="osgi.wiring.package" value="java.util.concurrent.atomic"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.function)"/>
+      <attribute name="osgi.wiring.package" value="java.util.function"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.stream)"/>
+      <attribute name="osgi.wiring.package" value="java.util.stream"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.document)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.document"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.index)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.index"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.internal.hppc)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.internal.hppc"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.search)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.search"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.store)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.store"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.util)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=21))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Eclipse Public License 2.0"/>
+      <attribute name="copyright" value="Data In Motion Consulting GmbH - All rights reserved"/>
+      <attribute name="osgi.identity" value="org.apache.lucene.analysis.morfologik"/>
+      <attribute name="documentation" value="https://github.com/geckoprojects-org/org.gecko.libraries"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="10.5.0.202608051357-SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="morfologik.stemming,org.apache.lucene.analysis,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.analysis.morfologik"/>
+      <attribute name="bundle-version" value="10.5.0.202608051357-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.morfologik"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="401190675,1524753701,1758576677,-108272214,-527444246" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.analysis.morfologik"/>
+      <attribute name="bundle-version" value="10.5.0.202608051357-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.uk"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1014643452,-908696865" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="10.5.0.202608051357-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.apache.lucene.analysis.morfologik"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="10.5.0.202608051357-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.apache.lucene.analysis.morfologik"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="4164506" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.apache.lucene.analysis.morfologik/org.apache.lucene.analysis.morfologik-10.5.0.jar"/>
+      <attribute name="osgi.content" value="6FF53FB31583BEDF52B21E90B816205940A095897D414953662A22AC2A36DD75"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.io)"/>
+      <attribute name="osgi.wiring.package" value="java.io"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
+      <attribute name="osgi.wiring.package" value="java.lang"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.invoke)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.invoke"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.runtime)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.runtime"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.net)"/>
+      <attribute name="osgi.wiring.package" value="java.net"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util)"/>
+      <attribute name="osgi.wiring.package" value="java.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.function)"/>
+      <attribute name="osgi.wiring.package" value="java.util.function"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.regex)"/>
+      <attribute name="osgi.wiring.package" value="java.util.regex"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=morfologik.stemming)"/>
+      <attribute name="osgi.wiring.package" value="morfologik.stemming"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=morfologik.stemming.polish)"/>
+      <attribute name="osgi.wiring.package" value="morfologik.stemming.polish"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis.charfilter)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.charfilter"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis.miscellaneous)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.miscellaneous"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis.standard)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.standard"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis.tokenattributes)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.tokenattributes"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.util)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=21))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Eclipse Public License 2.0"/>
+      <attribute name="copyright" value="Data In Motion Consulting GmbH - All rights reserved"/>
+      <attribute name="osgi.identity" value="org.apache.lucene.queries"/>
+      <attribute name="documentation" value="https://github.com/geckoprojects-org/org.gecko.libraries"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.index,org.apache.lucene.search"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.queries"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queries"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1092869100" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.util,org.apache.lucene.util.mutable"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.queries"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queries.function"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1412382693,1556716801,-2006176624,-1455256656,1196649213,-797750365,-809739118,-1840082614,1944299352,-1693756562,-139249119,-2038397126,1761550147,-1627313133,1585544062,1140754907,-571913094,1494091410,9420550,-1668720712,1607680114,-221147454,828197245,1924423312,-1881204845,1558464254,238744780,636791820" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.index,org.apache.lucene.queries.function,org.apache.lucene.util,org.apache.lucene.util.mutable"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.queries"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queries.function.docvalues"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-334036848,428778700,-1007675145,1827560329,1308947870,1465359723,-488548034,957440361" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.index,org.apache.lucene.queries.function,org.apache.lucene.queries.function.docvalues,org.apache.lucene.search,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.queries"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queries.function.valuesource"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1507253506,696658319,-740184122,-737774515,1415819179,-1460965575,1543498296,1500292007,-1137535575,1462185693,-51936925,574637542,1750341678,535395100,1187707802,-462069500,-177422568,109126100,-898128637,-632436263,-2112473949,9310426,-338008735,308237365,-644500890,-646263322,298502927,1547345117,-1449147015,1272835832,-538407056,-602275518,-916003685,-1654654533,-1739945662,-375942127,2100237843,-1885375752,291481957,-697170702,1213056109,-616820880,1515666283,-1933562116,16855493,-1059686222,1954173732,-415780459,-530416838,125717752,-2059228854,-383004716,1983411618,690249824,-1104244688,2045797865,-1185642321,1808551706,-1269827288,52974468,88562255,-1457204578,370998153" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.util,org.apache.lucene.util.automaton"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.queries"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queries.intervals"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1231004960,970453468,-1839813342,-1825144023,120003699,1121517398,1776556331,-1087419233,-308499077,-1788430612,1417456594,-1219870120,158386074,1449206325,1050896543,-605656089,581686001,1698561996,1203502960,-1786598463,465025762,1657305810,-28195395,-1270607069,586048246,1785004221,-694157197,80204913,1195965582,1691941660,-2027063363,-624646429,220765674,94652518,-1816811611,-2143237787,-1787898834,156487145,-853280502,1807145134,-1974597389,-666844297,-1228105115,902321700,-55634683,-2092457510,-2073670883,247914757,-1192970862,960567599,-34809304,660769574,2139857110,-1747102016,1092352508,-493402448,185962008,1325211514,-414632098,20941398,-632719678,160066525,180712455,-1616406571" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.search.similarities"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.queries"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queries.mlt"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="68143289,73679,-162038274,1826725226,438721918" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.index,org.apache.lucene.queries.spans,org.apache.lucene.search,org.apache.lucene.util"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.queries"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queries.payloads"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-508087351,1895507362,647457524,-716508426,73204582,-1418080284,-432587888,-17536736,-556105432,85988219,-979674291,2121979667,-635246554,436585154,1342413171,2138515011,-1958132906,949180818,-1116233064,-562638613,-1163761699,-1463913899,-463531898,-1436599272,-1320424848,-1693827685,-1031071388,2024674626,-1516628377,-1717168696,-1347424196,367108740,-1469627941" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.search.similarities"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.queries"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queries.spans"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1080431955,-2005658091,-809862206,2130435898,766724529,-1498158548,1500705428,-20547149,-65030077,2090763554,200923358,-1583777232,-194704880,622870952,1483763886,1487818756,-448327934,-1468025277,-324804976,-232588474,1895597947,-1634423469,1319547044,-2040711908,-348224566,260793654,-563143967,1223692095,521915333,288862683,594958573,-1371349069,1589314078,1626858654,1347506046,-1136053206,-2106852082,65516402,822284689,-281237351,-1019878782,274696013,1112171859,80085577,-275267267" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.apache.lucene.queries"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.apache.lucene.queries"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="830489" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.apache.lucene.queries/org.apache.lucene.queries-10.5.0.jar"/>
+      <attribute name="osgi.content" value="6153510E58F5333CEB41C5278C95E26242FF0B58B1B558AE78D27FD1A8ABE375"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.io)"/>
+      <attribute name="osgi.wiring.package" value="java.io"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
+      <attribute name="osgi.wiring.package" value="java.lang"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.invoke)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.invoke"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.runtime)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.runtime"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.nio.charset)"/>
+      <attribute name="osgi.wiring.package" value="java.nio.charset"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util)"/>
+      <attribute name="osgi.wiring.package" value="java.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.function)"/>
+      <attribute name="osgi.wiring.package" value="java.util.function"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.stream)"/>
+      <attribute name="osgi.wiring.package" value="java.util.stream"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis.tokenattributes)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.tokenattributes"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.document)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.document"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.index)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.index"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.search)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.search"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.search.similarities)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.search.similarities"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.util)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.util.automaton)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util.automaton"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.util.graph)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util.graph"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.util.mutable)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util.mutable"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=21))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Eclipse Public License 2.0"/>
+      <attribute name="copyright" value="Data In Motion Consulting GmbH - All rights reserved"/>
+      <attribute name="osgi.identity" value="org.apache.lucene.expressions"/>
+      <attribute name="documentation" value="https://github.com/geckoprojects-org/org.gecko.libraries"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.apache.lucene.search"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.expressions"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.expressions"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1004766894,-203169579,198012600,1156174834,-695629077,1829479188,-167479283,1127658112" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.antlr.v4.runtime,org.antlr.v4.runtime.tree,org.apache.lucene.expressions"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.lucene.expressions"/>
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.expressions.js"/>
+      <attribute name="version" value="10.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1974193632,-1376218992,-1990186676,-1492857748,1429040511,-1704551792,1101057634,1935492694,-1554968702,-1714059646,-1489199603,419140983,-14177342,-596989175,1230106652,1962977385,-1969037353,382883652,-862902654,958227970,863816741,-739506784,1461239820,1115960559,-686477791,2622298,912207731" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.apache.lucene.expressions"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="10.5.0.202608051310-SNAPSHOT" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.apache.lucene.expressions"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="140182" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.apache.lucene.expressions/org.apache.lucene.expressions-10.5.0.jar"/>
+      <attribute name="osgi.content" value="385B458F36E8B274ED1DCE6083024E18F477AE6FCEA9928070A2D5FFB1D8BDEE"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.io)"/>
+      <attribute name="osgi.wiring.package" value="java.io"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang)"/>
+      <attribute name="osgi.wiring.package" value="java.lang"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.constant)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.constant"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.invoke)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.invoke"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.lang.reflect)"/>
+      <attribute name="osgi.wiring.package" value="java.lang.reflect"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.nio.charset)"/>
+      <attribute name="osgi.wiring.package" value="java.nio.charset"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.text)"/>
+      <attribute name="osgi.wiring.package" value="java.text"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util)"/>
+      <attribute name="osgi.wiring.package" value="java.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.function)"/>
+      <attribute name="osgi.wiring.package" value="java.util.function"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=java.util.stream)"/>
+      <attribute name="osgi.wiring.package" value="java.util.stream"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.antlr.v4.runtime)"/>
+      <attribute name="osgi.wiring.package" value="org.antlr.v4.runtime"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.antlr.v4.runtime.atn)"/>
+      <attribute name="osgi.wiring.package" value="org.antlr.v4.runtime.atn"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.antlr.v4.runtime.dfa)"/>
+      <attribute name="osgi.wiring.package" value="org.antlr.v4.runtime.dfa"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.antlr.v4.runtime.misc)"/>
+      <attribute name="osgi.wiring.package" value="org.antlr.v4.runtime.misc"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.antlr.v4.runtime.tree)"/>
+      <attribute name="osgi.wiring.package" value="org.antlr.v4.runtime.tree"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.index)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.index"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.search)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.search"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.util)"/>
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.objectweb.asm)"/>
+      <attribute name="osgi.wiring.package" value="org.objectweb.asm"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.objectweb.asm.commons)"/>
+      <attribute name="osgi.wiring.package" value="org.objectweb.asm.commons"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=21))"/>
+    </requirement>
+  </resource>
+</repository>

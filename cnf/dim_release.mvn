@@ -1,0 +1,8 @@
+org.geckoprojects.libraries:org.apache.lucene.analysis.phonetic:10.5.0-SNAPSHOT
+org.geckoprojects.libraries:org.apache.lucene.expressions:10.5.0-SNAPSHOT
+org.geckoprojects.libraries:org.apache.lucene.benchmark:10.5.0-SNAPSHOT
+org.geckoprojects.libraries:org.apache.lucene.analysis.icu:10.5.0-SNAPSHOT
+org.geckoprojects.libraries:org.apache.lucene.facet:10.5.0-SNAPSHOT
+org.geckoprojects.libraries:org.apache.lucene.analysis.morfologik:10.5.0-SNAPSHOT
+org.geckoprojects.libraries:org.apache.lucene.core:10.5.0-SNAPSHOT
+org.geckoprojects.libraries:org.apache.lucene.queries:10.5.0-SNAPSHOT

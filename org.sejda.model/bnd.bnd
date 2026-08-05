@@ -1,4 +1,4 @@
-lib.version: 5.1.17
+lib.version: 5.1.21
 
 -buildpath: org.sejda:sejda-model;version=${lib.version}
 	

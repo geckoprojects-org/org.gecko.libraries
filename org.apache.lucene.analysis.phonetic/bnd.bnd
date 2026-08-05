@@ -1,7 +1,15 @@
 -buildpath: \
-	org.apache.lucene:lucene-analysis-phonetic;version=${lucene-version}
-	
+	org.apache.lucene:lucene-analysis-phonetic;version=${lucene-version},\
+	commons-codec:commons-codec;version=1.22.0
+
 -resourceonly: true
+
+-maven-dependencies: \
+	org.apache.commons.commons-codec;\
+	  groupId=commons-codec;\
+      artifactId=commons-codec;\
+      version=1.22.0;\
+      scope=compile
 
 Bundle-Version: ${lucene-version}.SNAPSHOT
 

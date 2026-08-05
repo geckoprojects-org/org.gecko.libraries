@@ -7,7 +7,7 @@
 	com.ibm.icu;\
 	  groupId=com.ibm.icu;\
       artifactId=icu4j;\
-      version=70.1;\
+      version=78.3;\
       scope=compile
 
 Bundle-Version: ${lucene-version}.SNAPSHOT

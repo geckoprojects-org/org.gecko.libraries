@@ -11,17 +11,17 @@ Export-Package: org.apache.lucene.*
 	org.antlr.antlr4-runtime;\
 	  groupId=org.antlr;\
       artifactId=antlr4-runtime;\
-      version=4.9.3;\
+      version=4.13.2;\
       scope=compile,\
 	org.objectweb.asm;\
 	  groupId=org.ow2.asm;\
       artifactId=asm;\
-      version=9.3;\
+      version=9.10.1;\
       scope=compile,\
 	org.objectweb.asm.commons;\
 	  groupId=org.ow2.asm;\
       artifactId=asm-commons;\
-      version=9.3;\
+      version=9.10.1;\
       scope=compile
       
 

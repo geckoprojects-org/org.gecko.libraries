@@ -1,8 +1,8 @@
-org.sejda:sejda-core:5.1.17
-org.sejda:sejda-core:jar:sources:5.1.17
+org.sejda:sejda-core:5.1.21
+org.sejda:sejda-core:jar:sources:5.1.21
 
-org.sejda:sejda-model:5.1.17
-org.sejda:sejda-model:jar:sources:5.1.17
+org.sejda:sejda-model:5.1.21
+org.sejda:sejda-model:jar:sources:5.1.21
 
 org.sejda:sejda-commons:3.0.1
 org.sejda:sejda-commons:jar:sources:3.0.1

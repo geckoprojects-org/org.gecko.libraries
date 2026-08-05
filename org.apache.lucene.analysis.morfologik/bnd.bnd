@@ -11,25 +11,26 @@ Export-Package: org.apache.lucene.*
 	org.carrot2.morfologik-stemming;\
 	  groupId=org.carrot2;\
       artifactId=morfologik-stemming;\
-      version=2.1.9;\
+      version=2.2.0;\
       scope=compile,\
 	org.carrot2.morfologik-fsa;\
 	  groupId=org.carrot2;\
       artifactId=morfologik-fsa;\
-      version=2.1.9;\
+      version=2.2.0;\
       scope=compile,\
 	org.carrot2.morfologik-polish;\
 	  groupId=org.carrot2;\
       artifactId=morfologik-polish;\
-      version=2.1.9;\
+      version=2.2.0;\
       scope=compile,\
-    org.apache.commons.commons-codec;\
-      groupId=commons-codec;\
-      artifactId=commons-codec;\
-      version=1.15;\
+	ua.net.nlp.morfologik-ukrainian-search;\
+	  groupId=ua.net.nlp;\
+      artifactId=morfologik-ukrainian-search;\
+      version=4.9.1;\
       scope=compile
 
 -includeresource: \
 	@${repo;org.apache.lucene:lucene-analysis-morfologik;${lucene-version}}!/META-INF/*.txt,\
 	@${repo;org.apache.lucene:lucene-analysis-morfologik;${lucene-version}}!/META-INF/services/*,\
+	@${repo;ua.net.nlp:morfologik-ukrainian-search;4.9.1},\
 	OSGI-OPT/src=@${repo;org.apache.lucene:lucene-analysis-morfologik:jar:sources;${lucene-version};EXACT}

@@ -15,7 +15,12 @@ Export-Package: org.apache.lucene.*
     org.apache.commons.commons-compress;\
 	  groupId=org.apache.commons;\
       artifactId=commons-compress;\
-      version=1.22;\
+      version=1.27.1;\
+      scope=compile,\
+    com.ibm.icu;\
+	  groupId=com.ibm.icu;\
+      artifactId=icu4j;\
+      version=78.3;\
       scope=compile
       
 

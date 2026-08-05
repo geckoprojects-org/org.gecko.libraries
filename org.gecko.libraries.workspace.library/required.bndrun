@@ -71,8 +71,6 @@
 	org.eclipse.paho.mqttv5.client;version=snapshot,\
 	org.gecko.ucar.netcdf;version=snapshot,\
 	org.gecko.ucar.units;version=snapshot,\
-	com.ibm.icu;version='[73.1.0,73.1.1)',\
-	org.antlr.antlr4-runtime;version='[4.13.1,4.13.2)',\
 	org.apache.lucene.analysis.icu;version=snapshot,\
 	org.apache.lucene.analysis.morfologik;version=snapshot,\
 	org.apache.lucene.analysis.opennlp;version=snapshot,\
@@ -94,13 +92,7 @@
 	org.apache.lucene.queryparser;version=snapshot,\
 	org.apache.lucene.spatial;version=snapshot,\
 	org.apache.lucene.suggest;version=snapshot,\
-	org.carrot2.morfologik-fsa;version='[2.1.9,2.1.10)',\
-	org.carrot2.morfologik-polish;version='[2.1.9,2.1.10)',\
-	org.carrot2.morfologik-stemming;version='[2.1.9,2.1.10)',\
 	org.locationtech.spatial4j;version='[0.8.0,0.8.1)',\
-	org.objectweb.asm;version='[9.7.0,9.7.1)',\
-	org.objectweb.asm.commons;version='[9.7.0,9.7.1)',\
-	org.objectweb.asm.tree;version='[9.7.0,9.7.1)',\
 	com.googlecode.libphonenumber;version='[9.0.26,9.0.27)',\
 	com.apicatalog.titanium.tree.io.api;version=snapshot,\
 	com.github.andrewoma.dexx.collection;version='[0.7.0,0.7.1)',\
@@ -138,4 +130,12 @@
 	io.netty.handler-proxy;version='[4.1.133,4.1.134)',\
 	io.netty.resolver;version='[4.1.133,4.1.134)',\
 	io.netty.transport;version='[4.1.133,4.1.134)',\
-	io.netty.transport-native-unix-common;version='[4.1.133,4.1.134)'
+	io.netty.transport-native-unix-common;version='[4.1.133,4.1.134)',\
+	com.ibm.icu;version='[78.3.0,78.3.1)',\
+	org.antlr.antlr4-runtime;version='[4.13.2,4.13.3)',\
+	org.carrot2.morfologik-fsa;version='[2.2.0,2.2.1)',\
+	org.carrot2.morfologik-polish;version='[2.2.0,2.2.1)',\
+	org.carrot2.morfologik-stemming;version='[2.2.0,2.2.1)',\
+	org.objectweb.asm;version='[9.10.1,9.10.2)',\
+	org.objectweb.asm.commons;version='[9.10.1,9.10.2)',\
+	org.objectweb.asm.tree;version='[9.10.1,9.10.2)'
