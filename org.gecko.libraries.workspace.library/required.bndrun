@@ -39,7 +39,8 @@
 	bnd.identity;id='org.apache.jena.commonsrdf',\
 	bnd.identity;id='org.apache.jena.rdfconnection',\
 	bnd.identity;id='io.grpc.core',\
-	bnd.identity;id='io.grpc.netty'
+	bnd.identity;id='io.grpc.netty',\
+	bnd.identity;id='com.github.stepenc.jcip'
 -runbundles: \
 	bcprov;version='[1.82.0,1.82.1)',\
 	bctls;version='[1.82.0,1.82.1)',\
@@ -138,4 +139,5 @@
 	org.carrot2.morfologik-stemming;version='[2.2.0,2.2.1)',\
 	org.objectweb.asm;version='[9.10.1,9.10.2)',\
 	org.objectweb.asm.commons;version='[9.10.1,9.10.2)',\
-	org.objectweb.asm.tree;version='[9.10.1,9.10.2)'
+	org.objectweb.asm.tree;version='[9.10.1,9.10.2)',\
+	com.github.stepenc.jcip;version=snapshot
