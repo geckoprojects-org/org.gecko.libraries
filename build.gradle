@@ -1,5 +1,5 @@
 plugins {
-  id "org.sonarqube" version "4.0.0.2929"
+  id "org.sonarqube" version "6.2.0.5505"
   id 'jacoco'
   id 'java'
 }
@@ -20,6 +20,7 @@ subprojects {
     // Allow gradle to enable JUnit support in submodules
     test {
         useJUnitPlatform()
+        failOnNoDiscoveredTests = false
     }
     
 }
@@ -49,9 +50,9 @@ task codeCoverageReport(type: JacocoReport) {
 
     // Generate xml reposrt for tools like sonar and html for humans
     reports {
-        xml.enabled true
-        html.enabled true
-        csv.enabled false
+        xml.required = true
+        html.required = true
+        csv.required = false
     }
 }
 
